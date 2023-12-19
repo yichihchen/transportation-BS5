@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.container {
+    max-width: 992px; // (696 + 24 gutter)
+    margin: 0 auto;
+    padding: 0 12px;   //不可刪除
+
+     @include mobile() {
+      max-width: 720px; // (696 + 24 gutter)
+    
+    }
+}
+
+a {
+    text-decoration: none;
+}
