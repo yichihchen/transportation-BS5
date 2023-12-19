@@ -2,37 +2,47 @@
   font-size: 100px;
 }
 
+// .wrap div {
+ 
 
-.bus{
+//   @media (min-width:768px) {
+//     width: 50%;
+//   }
+
+// }
+
+
+.bus {
   width: 200px;
   height: 200px;
   background-color: $primary;
   border-radius: 50%;
- 
+
 }
-.mrt{
+
+.mrt {
   width: 200px;
   height: 200px;
   background-color: #41aa00;
   border-radius: 50%;
 }
 
-.youbike{
+.youbike {
   width: 200px;
   height: 200px;
   background-color: #F09000;
   border-radius: 50%;
 }
 
-.logistic{
+.logistic {
   width: 200px;
   height: 200px;
-  background-color: #bb0321 ;
+  background-color: #bb0321;
   border-radius: 50%;
 }
 
-svg{
+svg {
   width: 100px;
   height: 100px;
-  
+
 }
