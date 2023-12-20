@@ -1,15 +1,23 @@
-.index-title {
-  font-size: 100px;
+.container {
+  background: linear-gradient(111deg, #E2D5D2 -1.01%, #64E8E7 28.01%, #5690D9 57.03%);
 }
 
 // .wrap div {
- 
+
 
 //   @media (min-width:768px) {
 //     width: 50%;
 //   }
 
 // }
+
+.wrap {
+  //讓radio消失不見
+
+  input[type="radio"] {
+    display: none;
+  }
+}
 
 
 .bus {
@@ -34,7 +42,7 @@
   border-radius: 50%;
 }
 
-.logistic {
+.management {
   width: 200px;
   height: 200px;
   background-color: #bb0321;
@@ -44,5 +52,80 @@
 svg {
   width: 100px;
   height: 100px;
+
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+// 公車內容
+.bus-wrap {
+
+  .bus-terminal,
+  .bus-arrival {
+    width: 100%;
+
+    h6 {
+      background-color: gray;
+
+    }
+  }
+
+  .bus-time {
+    width: 46%;
+  }
+
+  .bus-map {
+    width: 50%;
+  }
+
+
+  .bus-terminal {
+    width: 48%;
+  }
+
+  .bus-arrival {
+    width: 48%;
+  }
+
+  //捷運圖示
+.icon-frame{
+  width: 80px;  //統一icon的寬
+  background-color: #0072c6;
+  margin-right: 60px;
+}
+
+
+  //板南線
+
+  .BL-words-color {
+    color: #0087d4;
+  }
+
+  // .BL {
+  //   background-color: #0072c6;
+  //   margin-right: 60px;
+  // }
+
+  .BL-frame {
+    width: 200px;
+    border: 1px solid #0072c6;
+    margin-right: 60px;
+  }
+
+  //松山新店線
+  .G-words {
+    color: #007c59;
+  }
+
+  .G {
+    background-color: #007c59;
+    margin-right: 60px;
+  }
 
 }
