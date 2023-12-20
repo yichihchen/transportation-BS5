@@ -13,7 +13,7 @@
 
 
     <div class="container">
-      <ul class="wrap d-flex justify-content-evenly flex-wrap ps-0">
+      <ul class="tab-wrap wrap d-flex justify-content-evenly flex-wrap ps-0">
         <div class="d-flex flex-column align-items-center">
           <a href="#" class="tab" onclick="showTabContent(1)">
             <li class="bus position-relative "><svg xmlns="http://www.w3.org/2000/svg" height="16" width="18"
@@ -67,13 +67,16 @@
 
 
 
-      <!-- tab下方內容 -->
+      <!-- tabContent1下方內容 -->
 
       <div id="tabContent1" class="tab-content active">
         <!-- 公車內容 -->
         <div class="bus-wrap d-flex bg-light justify-content-between">
           <!-- 不要橫式結構要改 -->
-          <div class="bus-map text-center"><img src="../assets/images/busMap.jpg" alt="公車地圖"></div>
+          <div class="bus-map text-center"><img src="../assets/images/busMap.jpg" alt="公車地圖">
+            <div>這裡放更換sub tab的地方</div>
+          </div>
+
           <div class="bus-time">
             <div class=" d-flex justify-content-between">
               <div class="bus-terminal">
@@ -83,7 +86,7 @@
                 <h6 class="text-white lh-lg fs-4 text-center">預計到達時間</h6>
               </div>
             </div>
-            <!-- bus-time -->
+
             <div class="BL-information my-3 BL-words-color">
               <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span>
               <span class="BL01 BL-frame fs-3 d-inline-block text-center">頂埔</span>
@@ -100,22 +103,58 @@
               <span class="BL23 BL-frame fs-3 d-inline-block text-center">新店</span>
               <span class="BL23-time fs-3">三分鐘後到站</span>
             </div>
-          </div>
+            <div class="G-information my-3 G-words">
+              <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span>
+              <span class="BL23 BL-frame fs-3 d-inline-block text-center">小碧潭</span>
+              <span class="BL23-time fs-3">三分鐘後到站</span>
+            </div>
+
+          </div><!-- bus-time end-->
 
           <!--試寫標題樣式  -->
+
 
         </div>
 
       </div>
-      <!--  tabContent1-->
+      <!--  tabContent1 end-->
 
-
-
-
+      <!-- tabContent2  -->
       <div id="tabContent2" class="tab-content">
-
         <!-- 捷運內容 -->
         <h5>捷運內容</h5>
+        <div class="mrt-information ">
+          <div class="mrt-wrap position-relative">
+            <div class="mrt-title title-frame position-absolute">
+              <h6 class="text-center">試做title</h6>
+            </div>
+
+
+          </div>
+          <!-- 暫時放這裡 -->
+          <div class="board position-relative">
+            <span class="board-title-frame position-absolute">太陽能電況</span>
+            <div> <span style="font-size: 2em; color: #215DB6;" class="battery position-relative ms-2">
+                <i class="fa-solid fa-battery-full"></i>
+              </span></div>
+            <div class="board-information p-4">
+              <div class="d-flex justify-content-around">
+                <p class="fs-4">今日發電</p>
+                <p class="fs-4">累積發電</p>
+              </div>
+
+              <div class="d-flex justify-content-around">
+                <p class="fs-4">5.8千度</p>
+                <p class="fs-4">131 千度</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- put here end -->
+
+        </div>
+
+
       </div>
 
       <div id="tabContent3" class="tab-content">

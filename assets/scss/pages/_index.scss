@@ -19,14 +19,24 @@
   }
 }
 
+.tab-wrap {
+  svg {
+    width: 100px;
+    height: 100px;
+
+  }
+}
+
 
 .bus {
   width: 200px;
   height: 200px;
-  background-color: $primary;
+  background-color: rgba($primary, 1); //更改透明度
   border-radius: 50%;
 
 }
+
+
 
 .mrt {
   width: 200px;
@@ -49,11 +59,6 @@
   border-radius: 50%;
 }
 
-svg {
-  width: 100px;
-  height: 100px;
-
-}
 
 .tab-content {
   display: none;
@@ -93,12 +98,12 @@ svg {
     width: 48%;
   }
 
-  //捷運圖示
-.icon-frame{
-  width: 80px;  //統一icon的寬
-  background-color: #0072c6;
-  margin-right: 60px;
-}
+  //公車介面內捷運圖示
+  .icon-frame {
+    width: 80px; //統一icon的寬
+    background-color: #0072c6;
+    margin-right: 60px;
+  }
 
 
   //板南線
@@ -106,11 +111,6 @@ svg {
   .BL-words-color {
     color: #0087d4;
   }
-
-  // .BL {
-  //   background-color: #0072c6;
-  //   margin-right: 60px;
-  // }
 
   .BL-frame {
     width: 200px;
@@ -128,4 +128,47 @@ svg {
     margin-right: 60px;
   }
 
+}
+
+//捷運內容
+.mrt-wrap {
+  background-color: blue;
+  height: 100px;
+
+  .mrt-title {
+    background-color: pink;
+    height: 50px;
+  }
+
+  .title-frame {
+    width: 200px;
+    top: 5%;
+    border-radius: 0 5rem 5rem 0;
+  }
+}
+
+//component
+
+//告示牌
+.board {
+  // position: relative;
+  width: 300px; //改
+  height: 100%;  
+  background-color: rgba(white, 0.3);
+  border-radius: 8px;
+  border: 2px solid white;
+  
+
+  .board-title-frame {
+    // position: absolute;
+    width: 80%; //可改
+    top: 5%;
+    border-radius: 0 5rem 5rem 0;
+    background-color: #fff;
+    color: #617DB3;
+    text-align: center;
+  }
+  .battery{
+    left:80%
+  }
 }
