@@ -113,7 +113,7 @@
   }
 
   .BL-frame {
-    width: 200px;
+    width: 200px;   //可改fit-content
     border: 1px solid #0072c6;
     margin-right: 60px;
   }
@@ -141,7 +141,7 @@
   }
 
   .title-frame {
-    width: 200px;
+    width: 200px; //可改fit-content
     top: 5%;
     border-radius: 0 5rem 5rem 0;
   }
@@ -228,9 +228,9 @@
   background-color: rgba(white, 0.3);
   border-radius: 8px;
   border: 2px solid white;
-
+  
   .mrt-title-frame {
-    padding: 4px 16px; //標題白色空間
+    padding: 4px 5em; //標題白色空間 改成em
     margin-right: 2rem;
     border-radius: 0 5rem 5rem 0;
     background-color: #fff;
@@ -238,6 +238,13 @@
 
   }
 
+
+  .R-frame {
+    width: fit-content;
+    border: 1px solid white;
+    padding: 2px 32px;
+    margin-right: 60px;
+  }
 
   .title-frame {
     width: 200px;
