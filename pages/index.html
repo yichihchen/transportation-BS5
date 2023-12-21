@@ -74,11 +74,68 @@
 
       <div id="tabContent1" class="tab-content active">
         <!-- 公車內容 -->
-        <div class="bus-wrap d-flex bg-light justify-content-between">
+        <!-- 直接變直式 -->
+        <div class="bus-wrap d-flex flex-column align-items-center">
           <!-- 不要橫式結構要改 -->
+          <!-- bus map -->
+          <div class="bus-map text-center"><img src="../assets/images/mapAll.png" alt="公車地圖">
+
+            <div>
+              <p>這裡放更換sub tab的地方</p>
+              <img src="../assets/images/藍29-裁切.png" alt="藍29公車路線圖">
+            </div>
+            <a href="./component.html">component</a>
+          </div>
+          <!-- bus map end-->
+
+          <div class="bus-time">
+            <div class=" d-flex justify-content-between">
+              <div class="Wanhua-exercise"><a href="#">
+                <h6 class="text-white lh-lg fs-4 text-center">萬華運動中心</h6></a>
+              </div>
+              <div class="Luoyang-parkinglot"><a href="#">
+                <h6 class="text-white lh-lg fs-4 text-center">洛陽停車場</h6></a>
+              </div>
+              <div class="Fushin-park"><a href="#">
+                <h6 class="text-white lh-lg fs-4 text-center">福興公園</h6></a>
+              </div>
+            </div>
+
+            <div class="Bus-information my-3 B29-words-color p-2 rounded z-1">
+              <span class="B29 fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">藍29</span>
+              <span class="B29-arrival fs-3 d-inline-block text-center">往聯合醫院中興院區</span>
+              <span class="B29-time fs-3">三分鐘後到站</span>
+            </div>
+            <div class="Bus-information my-3 B29-words-color p-2 rounded z-1">
+              <span class="B29 fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">938</span>
+              <span class="B29-arrival fs-3 d-inline-block text-center">往捷運台大醫院站</span>
+              <span class="B29-time fs-3">五分鐘後到站</span>
+            </div>
+
+
+          </div><!-- bus-time end-->
+
+
+
+
+        </div>
+
+      </div>
+      <!--  tabContent1 end-->
+
+      <!-- tabContent2  -->
+      <div id="tabContent2" class="tab-content">
+
+        <!-- 捷運內容 -->
+        <!-- 直接變直式 -->
+        <div class="bus-wrap bg-light d-flex flex-column align-items-center">
+          <!-- 不要橫式結構要改 -->
+          <!-- bus map -->
           <div class="bus-map text-center"><img src="../assets/images/busMap.jpg" alt="公車地圖">
             <div>這裡放更換sub tab的地方</div>
+            <a href="./component.html">component</a>
           </div>
+          <!-- bus map end-->
 
           <div class="bus-time">
             <div class=" d-flex justify-content-between">
@@ -114,129 +171,26 @@
 
           </div><!-- bus-time end-->
 
-          <!--試寫標題樣式  -->
 
 
-        </div>
-
-      </div>
-      <!--  tabContent1 end-->
-
-      <!-- tabContent2  -->
-      <div id="tabContent2" class="tab-content">
-        <!-- 捷運內容 -->
-        <h5>捷運內容</h5>
-        <div class="mrt-information ">
-          <div class="mrt-wrap position-relative">
-            <div class="mrt-title title-frame position-absolute">
-              <h6 class="text-center">試做title</h6>
-            </div>
-
-
-          </div>
-          <!-- 暫時放這裡 -->
-          <!-- 布告欄 -->
-          <div class="board">
-            <div class="d-flex align-items-center mt-2">
-              <span class="board-title-frame position-relative d-flex d-inline-block align-items-center">太陽能電況</span>
-              <div class=" battery-icon"> <span style="font-size: 2em; color: #215DB6;">
-                  <i class="fa-solid fa-battery-full d-flex align-items-center"><span style="font-size: 1rem;"
-                      class="battery-data ps-2">99%</span></i>
-                </span></div>
-            </div>
-            <div class="board-information d-flex justify-content-between">
-              <div class="me-4">
-                <p class="fs-4 text-center text-white font-bold">今日發電</p>
-                <p class="fs-4 battery-p">5.8千度</p>
-
-              </div>
-
-              <div class="board-caculate">
-                <p class="fs-4 text-center text-white font-bold">累積發電</p>
-                <p class="fs-4 battery-p">131 千度</p>
-              </div>
-            </div>
-          </div>
-          <!-- 電梯 -->
-          <div class="elevator">
-            <div class="d-flex align-items-center mt-2">
-              <span class="elevator-title-frame position-relative d-flex d-inline-block align-items-center"><span
-                  style="font-size: 1em; color: #617DB3;" class="d-flex d-inline-block justify-content-center">
-                  <i class="fa-solid fa-elevator"></i></span><span class="ms-2">電梯1</span></span>
-            </div>
-
-            <div class="elevator-information">
-              <div class="elevator-block text-center">
-                <span style="font-size: 3em; color: white;" class="d-flex d-inline-block justify-content-center">
-                  <i class="fa-solid fa-sort-up"></i></span>
-                <p class="text-white m-0">18F</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="elevator">
-            <div class="d-flex align-items-center mt-2">
-              <span class="elevator-title-frame position-relative d-flex d-inline-block align-items-center"><span
-                style="font-size: 1em; color: #617DB3;" class="d-flex d-inline-block justify-content-center">
-                <i class="fa-solid fa-elevator"></i></span><span class="ms-2">電梯3</span></span>
-            </div>
-
-            <div class="elevator-information">
-              <div class="elevator-block text-center">
-                <span style="font-size: 2em; color: #FDC500;" class="d-flex d-inline-block justify-content-center">
-                  <i class="fa-solid fa-screwdriver-wrench"></i></span>
-                <p class="text-white m-0 pt-2">18F</p>
-              </div>
-            </div>
-          </div>
-          <!-- elevator end -->
-
-          <!-- mrt -->
-
-          <div class="mrt-block text-white fw-bold">
-            <div class="d-flex align-items-center mt-2">
-              <span class="mrt-title-frame position-relative d-flex d-inline-block align-items-center"><span>捷運資訊</span></span>
-            </div>
-
-            <div class="mrt-block-information">
-              <!-- 下底線樣式 -->
-              <div class="R-information m-3 pb-3 R-words-color border-bottom">
-                <span class="R fs-2 text-white text-center p-2 rounded icon-frame d-inline-block">R</span>
-                <span class="BL01 R-frame fs-3 d-inline-block text-center">象山</span>
-                <span class="BL01-time fs-3">三分鐘後到站</span>
-              </div>
-              </div>
-
-              <div class="mrt-block-information">
-                <!-- 下底線樣式 -->
-                <div class="R-information m-3 R-words-color">
-                  <span class="R fs-2 text-white text-center p-2 rounded icon-frame d-inline-block">R</span>
-                  <span class="BL01 R-frame fs-3 d-inline-block text-center">北投</span>
-                  <span class="BL01-time fs-3">三分鐘後到站</span>
-                </div>
-                </div>
-          </div>
-
-
-          <!-- mrt end -->
-
-
-          <!-- put here end -->
 
         </div>
 
-
       </div>
 
-      <div id="tabContent3" class="tab-content">
-        <!-- YouBike內容 -->
-        <h5>YouBike內容</h5>
-      </div>
 
-      <div id="tabContent4" class="tab-content">
-        <!-- 物業管理系統內容 -->
-        <h5>物業管理系統內容</h5>
-      </div>
+
+    </div>
+
+    <div id="tabContent3" class="tab-content">
+      <!-- YouBike內容 -->
+      <h5>YouBike內容</h5>
+    </div>
+
+    <div id="tabContent4" class="tab-content">
+      <!-- 物業管理系統內容 -->
+      <h5>物業管理系統內容</h5>
+    </div>
 
     </div>
     </div>

@@ -1,0 +1,145 @@
+//component
+
+//電力告示牌
+.board {
+
+    width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
+    height: 100%;
+    background-color: rgba(white, 0.3);
+    border-radius: 8px;
+    border: 2px solid white;
+  
+    .board-information {
+      padding: 24px;
+    }
+  
+  
+    .board-title-frame {
+      padding: 4px 24px; //標題白色空間
+      width: 60%;
+      // margin-top: 1rem;
+      margin-right: 2rem;
+      border-radius: 0 5rem 5rem 0;
+      background-color: #fff;
+      color: #617DB3;
+  
+    }
+  
+    .battery-icon {
+      left: 85%
+    }
+  
+    .battery-p {
+      //有背景顏色的p標籤
+      background-color: #215DB6;
+      padding: 4px 12px;
+      color: white;
+      border-radius: 10px;
+    }
+  
+  }
+  
+  //電梯資訊1
+  .elevator {
+  
+    width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
+    height: 100%;
+    background-color: rgba(white, 0.3);
+    border-radius: 8px;
+    border: 2px solid white;
+  
+    .elevator-information {
+      padding: 16px 24px;
+  
+    }
+  
+    .elevator-block {
+      background-color: #215DB6;
+      border-radius: 10px;
+      padding: 16px 36px; //電梯藍色空間
+    }
+  
+    .elevator-title-frame {
+      padding: 4px 16px; //標題白色空間
+  
+      margin-right: 2rem;
+      border-radius: 0 5rem 5rem 0;
+      background-color: #fff;
+      color: #617DB3;
+  
+    }
+  
+  
+  }
+  
+  //捷運
+  .mrt-block {
+    width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
+    height: 100%;
+    background-color: rgba(white, 0.3);
+    border-radius: 8px;
+    border: 2px solid white;
+    
+    .mrt-title-frame {
+      padding: 4px 5em; //標題白色空間 改成em
+      margin-right: 2rem;
+      border-radius: 0 5rem 5rem 0;
+      background-color: #fff;
+      color: #617DB3;
+  
+    }
+  
+  
+    .R-frame {
+      width: fit-content;
+      border: 1px solid white;
+      padding: 2px 32px;
+      margin-right: 60px;
+    }
+  
+    .title-frame {
+      width: 200px;
+      top: 5%;
+      border-radius: 0 5rem 5rem 0;
+    }
+  
+    .icon-frame {
+      width: 60px; //統一icon的寬
+      background-color: #D93737;
+      margin-right: 32px;
+    }
+  
+  }
+  
+  //youbike
+  .youbike-block {
+  
+    width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
+    height: 100%;
+    background-color: rgba(white, 0.3);
+    border-radius: 8px;
+    border: 2px solid white;
+  
+    .youbike-information {
+      padding: 16px 24px;
+  
+    }
+  
+    .youbike-block {
+      background-color: #215DB6;
+      border-radius: 10px;
+      padding: 16px 36px; //電梯藍色空間
+    }
+  
+    .youbike-title-frame {
+      padding: 4px 16px; //標題白色空間
+  
+      margin-right: 2rem;
+      border-radius: 0 5rem 5rem 0;
+      background-color: #fff;
+      color: #617DB3;
+  
+    }
+  
+  
+  }

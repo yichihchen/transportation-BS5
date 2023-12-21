@@ -69,24 +69,51 @@
 }
 
 // 公車內容
+//這些顏色要補gradient
 .bus-wrap {
-
-  .bus-terminal,
-  .bus-arrival {
+  .Wanhua-exercise {
     width: 100%;
 
     h6 {
-      background-color: gray;
+      background-color: rgb(230, 138, 0);
+      border-radius: 5rem 0 0 5rem;
 
     }
   }
 
-  .bus-time {
-    width: 46%;
+  .Luoyang-parkinglot {
+    width: 100%;
+
+    h6 {
+      background-color: rgb(224, 191, 1);
+
+    }
   }
 
+  .Fushin-park {
+    width: 100%;
+
+    h6 {
+      background-color: rgb(0, 89, 253);
+      border-radius: 0rem 5rem 5rem 0rem;
+
+    }
+  }
+
+
+
+  //公車終點站
+  .bus-time {
+    width: 90%;
+    a{
+      text-decoration: none;
+    }
+
+  }
+
+  //公車地圖
   .bus-map {
-    width: 50%;
+    width: 90%;
   }
 
 
@@ -98,12 +125,21 @@
     width: 48%;
   }
 
+  .Bus-information{
+    background-color: rgba(255, 255, 255, 0.7);
+    span{
+      width: 33%;    //藍29 & 描述 & 幾分鐘後到分成3等分
+    }   
+  }
+
+ 
   //公車介面內捷運圖示
   .icon-frame {
     width: 80px; //統一icon的寬
     background-color: #0072c6;
-    margin-right: 60px;
+    // margin-right: 60px;
   }
+  
 
 
   //板南線
@@ -113,7 +149,7 @@
   }
 
   .BL-frame {
-    width: 200px;   //可改fit-content
+    width: 200px; //可改fit-content
     border: 1px solid #0072c6;
     margin-right: 60px;
   }
@@ -145,119 +181,4 @@
     top: 5%;
     border-radius: 0 5rem 5rem 0;
   }
-}
-
-//component
-
-//電力告示牌
-.board {
-
-  width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
-  height: 100%;
-  background-color: rgba(white, 0.3);
-  border-radius: 8px;
-  border: 2px solid white;
-
-  .board-information {
-    padding: 24px;
-  }
-
-
-  .board-title-frame {
-    padding: 4px 24px; //標題白色空間
-    width: 60%;
-    // margin-top: 1rem;
-    margin-right: 2rem;
-    border-radius: 0 5rem 5rem 0;
-    background-color: #fff;
-    color: #617DB3;
-
-  }
-
-  .battery-icon {
-    left: 85%
-  }
-
-  .battery-p {
-    //有背景顏色的p標籤
-    background-color: #215DB6;
-    padding: 4px 12px;
-    color: white;
-    border-radius: 10px;
-  }
-
-}
-
-//電梯資訊1
-.elevator {
-
-  width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
-  height: 100%;
-  background-color: rgba(white, 0.3);
-  border-radius: 8px;
-  border: 2px solid white;
-
-  .elevator-information {
-    padding: 16px 24px;
-
-  }
-
-  .elevator-block {
-    background-color: #215DB6;
-    border-radius: 10px;
-    padding: 16px 36px; //電梯藍色空間
-  }
-
-  .elevator-title-frame {
-    padding: 4px 16px; //標題白色空間
-
-    margin-right: 2rem;
-    border-radius: 0 5rem 5rem 0;
-    background-color: #fff;
-    color: #617DB3;
-
-  }
-
-
-}
-
-//捷運
-.mrt-block {
-  width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
-  height: 100%;
-  background-color: rgba(white, 0.3);
-  border-radius: 8px;
-  border: 2px solid white;
-  
-  .mrt-title-frame {
-    padding: 4px 5em; //標題白色空間 改成em
-    margin-right: 2rem;
-    border-radius: 0 5rem 5rem 0;
-    background-color: #fff;
-    color: #617DB3;
-
-  }
-
-
-  .R-frame {
-    width: fit-content;
-    border: 1px solid white;
-    padding: 2px 32px;
-    margin-right: 60px;
-  }
-
-  .title-frame {
-    width: 200px;
-    top: 5%;
-    border-radius: 0 5rem 5rem 0;
-  }
-
-  .icon-frame {
-    width: 60px; //統一icon的寬
-    background-color: #D93737;
-    margin-right: 32px;
-  }
-
-
-
 }
