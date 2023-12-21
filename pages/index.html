@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>index</title>
 </head>
 
@@ -132,24 +135,82 @@
 
           </div>
           <!-- 暫時放這裡 -->
-          <div class="board position-relative">
-            <span class="board-title-frame position-absolute">太陽能電況</span>
-            <div> <span style="font-size: 2em; color: #215DB6;" class="battery position-relative ms-2">
-                <i class="fa-solid fa-battery-full"></i>
-              </span></div>
-            <div class="board-information p-4">
-              <div class="d-flex justify-content-around">
-                <p class="fs-4">今日發電</p>
-                <p class="fs-4">累積發電</p>
+          <!-- 布告欄 -->
+          <div class="board">
+            <div class="d-flex align-items-center mt-2">
+              <span class="board-title-frame position-relative d-flex d-inline-block align-items-center">太陽能電況</span>
+              <div class=" battery-icon"> <span style="font-size: 2em; color: #215DB6;">
+                  <i class="fa-solid fa-battery-full d-flex align-items-center"><span style="font-size: 1rem;"
+                      class="battery-data ps-2">99%</span></i>
+                </span></div>
+            </div>
+            <div class="board-information d-flex justify-content-between">
+              <div class="me-4">
+                <p class="fs-4 text-center text-white font-bold">今日發電</p>
+                <p class="fs-4 battery-p">5.8千度</p>
+
               </div>
 
-              <div class="d-flex justify-content-around">
-                <p class="fs-4">5.8千度</p>
-                <p class="fs-4">131 千度</p>
+              <div class="board-caculate">
+                <p class="fs-4 text-center text-white font-bold">累積發電</p>
+                <p class="fs-4 battery-p">131 千度</p>
               </div>
             </div>
-
           </div>
+          <!-- 電梯 -->
+          <div class="elevator">
+            <div class="d-flex align-items-center mt-2">
+              <span class="elevator-title-frame position-relative d-flex d-inline-block align-items-center"><span
+                  style="font-size: 1em; color: #617DB3;" class="d-flex d-inline-block justify-content-center">
+                  <i class="fa-solid fa-elevator"></i></span><span class="ms-2">電梯1</span></span>
+            </div>
+
+            <div class="elevator-information">
+              <div class="elevator-block text-center">
+                <span style="font-size: 3em; color: white;" class="d-flex d-inline-block justify-content-center">
+                  <i class="fa-solid fa-sort-up"></i></span>
+                <p class="text-white m-0">18F</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="elevator">
+            <div class="d-flex align-items-center mt-2">
+              <span class="elevator-title-frame position-relative d-flex d-inline-block align-items-center"><span
+                style="font-size: 1em; color: #617DB3;" class="d-flex d-inline-block justify-content-center">
+                <i class="fa-solid fa-elevator"></i></span><span class="ms-2">電梯3</span></span>
+            </div>
+
+            <div class="elevator-information">
+              <div class="elevator-block text-center">
+                <span style="font-size: 2em; color: #FDC500;" class="d-flex d-inline-block justify-content-center">
+                  <i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <p class="text-white m-0 pt-2">18F</p>
+              </div>
+            </div>
+          </div>
+          <!-- elevator end -->
+
+          <!-- mrt -->
+
+          <div class="mrt-block">
+            <div class="d-flex align-items-center mt-2">
+              <span class="mrt-title-frame position-relative d-flex d-inline-block align-items-center"><span>捷運資訊</span></span>
+            </div>
+
+            <div class="mrt-block-information">
+              <div class="R-information p-3 R-words-color ">
+                <span class="R fs-2 text-white text-center p-2 rounded icon-frame d-inline-block">R</span>
+                <span class="BL01 BL-frame fs-3 d-inline-block text-center">象山</span>
+                <span class="BL01-time fs-3">三分鐘後到站</span>
+              </div>
+              </div>
+          </div>
+
+
+          <!-- mrt end -->
+
+
           <!-- put here end -->
 
         </div>
@@ -177,9 +238,7 @@
 
       <script type="module" src="../main.js"></script>
       <!-- fontawesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
       <script>
         function showTabContent(tabNumber) {
