@@ -169,15 +169,6 @@ a.tab {
   width: 90%;
 }
 
-
-.bus-terminal {
-  width: 48%;
-}
-
-.bus-arrival {
-  width: 48%;
-}
-
 .Bus-information {
   background-color: rgba(255, 255, 255, 0.7);
 
@@ -189,9 +180,10 @@ a.tab {
 .bus-white {
   width: fit-content; //img外以圖片大小為主
   margin: 0 auto; //置中
+  padding: 16px;
 
   img {
-    margin: 24px 40px;
+    margin: 24px 0px;
   }
 }
 
@@ -210,41 +202,35 @@ a.tab {
 //板南線
 .BL-information {
   span:nth-child(1) {
-    width: 15%;
+    width: 40%;
   }
 
   span:nth-child(2) {
-    width: 25%;
+    width: 50%;
   }
 
-  span:nth-child(3) {
-    width: 25%;
-  }
-}
+ }
 
 .BL-words-color {
   color: #0087d4;
 }
 
 .BL-frame {
-  width: 200px; //可改fit-content
+  width: fit-content;
   border: 1px solid #0072c6;
-  // margin-right: 60px;
+  
 }
 
 //松山新店線
 .G-information {
   span:nth-child(1) {
-    width: 15%;
+    width: 50%;
   }
 
   span:nth-child(2) {
-    width: 25%;
+    width: 50%;
   }
-
-  span:nth-child(3) {
-    width: 25%;
-  }
+ 
 }
 
 .G-words {
@@ -260,13 +246,6 @@ a.tab {
 
 //捷運內容
 .mrt-wrap {
-  background-color: blue;
-  height: 100px;
-
-  .mrt-title {
-    background-color: pink;
-    height: 50px;
-  }
 
   .title-frame {
     width: 200px; //可改fit-content
@@ -285,22 +264,21 @@ a.tab {
 
 }
 
+// 板南線
 .mrt-terminal {
-  width: 48%;
-  background-color: gray;
+  width: 90%;
+   background-color:#0072c6;
 }
 
+// 新店線
 .mrt-arrival {
-  width: 48%;
-  background-color: gray;
+  width: 90%;
+   background-color:#007c59;
 }
 
 .Bus-information {
   background-color: rgba(255, 255, 255, 0.7);
 
-  span {
-    width: 33%; //藍29 & 描述 & 幾分鐘後到分成3等分
-  }
 }
 
 
@@ -317,7 +295,7 @@ a.tab {
   height: 100%;
   background-color: rgba(white, 0.3);
   border-radius: 8px;
-  border: 2px solid white;
+  // border: 2px solid white;
 
   .youbike-information {
     padding: 16px 24px;

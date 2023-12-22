@@ -20,13 +20,13 @@
         <div class="d-flex flex-column align-items-center">
           <a href="#" class="tab" onclick="showTabContent(1)">
             <li class="bus position-relative ">
-            
-                <span style="font-size: 2em; color: #ffffff;"
-                  class="position-absolute top-50 start-50 translate-middle d-inline-block text-center">
-                  <i class="fa-solid fa-bus"></i>
-                  <h4 class="text-white pt-2">公車</h4>
-                </span>
-              
+
+              <span style="font-size: 2em; color: #ffffff;"
+                class="position-absolute top-50 start-50 translate-middle d-inline-block text-center">
+                <i class="fa-solid fa-bus"></i>
+                <h4 class="text-white pt-2">公車</h4>
+              </span>
+
             </li>
           </a>
 
@@ -132,7 +132,7 @@
               <p class="text-white">這裡放更換sub tab2的地方</p>
               <!-- img外面白色邊框 -->
               <div class="bus-white text-center bg-light rounded">
-                <img src="../assets/images/藍29-裁切.png" class="my-4" alt="938公車路線圖">
+                <img src="../assets/images/藍29-裁切.png" class="" alt="938公車路線圖">
               </div>
             </div>
 
@@ -160,39 +160,51 @@
           <!-- mrt map end-->
 
           <div class="mrt-time bg-light p-4">
-            <div class=" d-flex justify-content-between">
-              <div class="mrt-terminal">
-                <h6 class="text-white lh-lg fs-4 text-center">終點站</h6>
+            <div class=" d-flex">
+              <div class="mrt-BL-board w-100 me-4">
+                <div class="mrt-terminal rounded">
+                  <h6 class="text-white lh-lg fs-4 text-center m-0">板南線</h6>
+                </div>
+                <!-- 板南線時刻表 -->
+                <div class="BL-information BL-words-color d-flex justify-content-around align-items-center my-3">
+                  <!-- <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span> -->
+                  <span class="BL01 BL-frame fs-3 d-inline-block text-center">頂埔</span>
+                  <span class="BL01-time fs-4 d-inline-block text-center">三分鐘後到站</span>
+                </div>
+                <div class="BL-information BL-words-color d-flex justify-content-around align-items-center my-3">
+                  <!-- <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span> -->
+                  <span class="BL23 BL-frame fs-3 d-inline-block text-center">南港展覽館</span>
+                  <span class="BL23-time fs-4  d-inline-block text-center">三分鐘後到站</span>
+                </div>
               </div>
-              <div class="mrt-arrival">
-                <h6 class="text-white lh-lg fs-4 text-center">預計到達時間</h6>
+
+              <div class="mrt-G-board w-100">
+              <div class="mrt-arrival rounded">
+                <h6 class="text-white lh-lg fs-4 text-center m-0">新店線</h6>
               </div>
+              <div class="G-information G-words d-flex justify-content-around align-items-center my-3">
+                <!-- <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span> -->
+                <span class="BL23 BL-frame fs-3 d-inline-block text-center">新店</span>
+                <span class="BL23-time fs-4 text-center">三分鐘後到站</span>
+              </div>
+
+              <div class="G-information G-words d-flex justify-content-around align-items-center my-3">
+                <!-- <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span> -->
+                <span class="BL23 BL-frame fs-3 d-inline-block text-center">小碧潭</span>
+                <span class="BL23-time fs-4 text-center">三分鐘後到站</span>
+              </div>
+
+
+            </div>
+
+
+
             </div>
 
             <!-- station details -->
 
-            <div class="BL-information  BL-words-color d-flex justify-content-around align-items-center my-3">
-              <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span>
-              <span class="BL01 BL-frame fs-3 d-inline-block text-center">頂埔</span>
-              <span class="BL01-time fs-3 d-inline-block text-center">三分鐘後到站</span>
-            </div>
-            <div class="BL-information BL-words-color d-flex justify-content-around align-items-center my-3">
-              <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span>
-              <span class="BL23 BL-frame fs-3 d-inline-block text-center">南港展覽館</span>
-              <span class="BL23-time fs-3  d-inline-block text-center">三分鐘後到站</span>
-            </div>
-
-            <div class="G-information G-words d-flex justify-content-around align-items-center my-3">
-              <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span>
-              <span class="BL23 BL-frame fs-3 d-inline-block text-center">新店</span>
-              <span class="BL23-time fs-3 text-center">三分鐘後到站</span>
-            </div>
-            <div class="G-information G-words d-flex justify-content-around align-items-center my-3">
-              <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span>
-              <span class="BL23 BL-frame fs-3 d-inline-block text-center">小碧潭</span>
-              <span class="BL23-time fs-3 text-center">三分鐘後到站</span>
-            </div>
-            <!-- station details end-->
+        
+           <!-- station details end-->
           </div><!-- mrt-time end-->
 
         </div>
