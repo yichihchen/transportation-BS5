@@ -1,5 +1,6 @@
 .container {
-  background: linear-gradient(170deg, #E2D5D2 2%, #64E8E7 20%, #5690D9 80%);
+  // background: linear-gradient(170deg, #E2D5D2 2%, #64E8E7 20%, #5690D9 80%);
+  background: linear-gradient(320deg, #334c6d 10%, #5690D9 90%);
 }
 
 // .wrap div {
@@ -11,6 +12,15 @@
 
 // }
 
+
+//消除掉icon旁邊兩個點點
+a.tab {
+  text-decoration: none;
+  /* 取消連結的底線 */
+  list-style: none;
+  /* 取消列表點點 */
+}
+
 .wrap {
   //讓radio消失不見
 
@@ -19,44 +29,56 @@
   }
 }
 
+//tab icon大小
 .tab-wrap {
   svg {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 
   }
 }
 
+//四個大按鈕
 
 .bus {
   width: 200px;
   height: 200px;
-  background-color: rgba($primary, 1); //更改透明度
-  border-radius: 50%;
-
+  // background-color: #ff844f; //更改透明度
+  // border-radius: 50%;
+  // border: 16px solid rgba(255, 255, 255, 0.4); //設定跟其他按鈕不一樣喔
+  background-image: url(/assets/images/公車按鈕AI.png);
+  
 }
+
 
 
 
 .mrt {
   width: 200px;
   height: 200px;
-  background-color: #41aa00;
-  border-radius: 50%;
+  // background-color: #5dcff8;
+  // border-radius: 50%;
+  // border: 16px solid rgba(255, 255, 255, 0.4);
+  // // background: linear-gradient(to left, #36b8b9, #247c7c);
+  background-image: url(/assets/images/公車按鈕AI-藍.png);
 }
 
 .youbike {
   width: 200px;
   height: 200px;
-  background-color: #F09000;
-  border-radius: 50%;
+  // background-color: #5675e3;
+  // border-radius: 50%;
+  // border: 16px solid rgba(255, 255, 255, 0.4);
+  background-image: url(/assets/images/公車按鈕AI-紫.png);
 }
 
 .management {
   width: 200px;
   height: 200px;
-  background-color: #bb0321;
-  border-radius: 50%;
+  // background-color: #fa5a7d;
+  // border-radius: 50%;
+  // border: 16px solid rgba(255, 255, 255, 0.4);
+  background-image: url(/assets/images/公車按鈕AI-紅.png);
 }
 
 
@@ -75,7 +97,7 @@
     width: 100%;
 
     h6 {
-      background-color: rgb(230, 138, 0);
+      background: linear-gradient(to bottom, #ff844f, #d66f43);
       border-radius: 5rem 0 0 5rem;
 
     }
@@ -85,7 +107,7 @@
     width: 100%;
 
     h6 {
-      background-color: rgb(224, 191, 1);
+      background: linear-gradient(to bottom, #36b8b9, #247c7c);
 
     }
   }
@@ -94,102 +116,147 @@
     width: 100%;
 
     h6 {
-      background-color: rgb(0, 89, 253);
+      background: linear-gradient(to bottom, #5675e3, #3452b1);
+      // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 調整外陰影效果，根據需要調整大小和顏色 */
       border-radius: 0rem 5rem 5rem 0rem;
 
     }
   }
 
-
-
-  //公車終點站
-  .bus-time {
-    width: 90%;
-
-    a {
-      text-decoration: none;
-    }
-
+  .bus-title {
+    position: relative;
+    letter-spacing: 6px;
+    /* 調整字間距，可以是負值 */
   }
 
-  //公車地圖
-  .bus-map {
-    width: 90%;
+  //地理位置底線
+  .bus-title::after {
+    position: absolute;
+    content: "";
+    /* 添加內容，這裡是空字符串 */
+    display: block;
+    /* 讓偽元素以區塊元素方式呈現，佔據一行 */
+    width: 60px;
+    /* 底線的寬度 */
+    height: 3px;
+    /* 底線的高度 */
+    background-color: #ffffff;
+    /* 底線的顏色 */
+    margin-top: 12px;
+    /* 距離標題文字的距離，根據需要調整 */
+    // 完全置中
+    transform: translateX(-50%) translateY(-50%);
+
+    left: 50%;
   }
-
-
-  .bus-terminal {
-    width: 48%;
-  }
-
-  .bus-arrival {
-    width: 48%;
-  }
-
-  .Bus-information {
-    background-color: rgba(255, 255, 255, 0.7);
-
-    span {
-      width: 33%; //藍29 & 描述 & 幾分鐘後到分成3等分
-    }
-  }
-
-
-  //公車介面內捷運圖示
-  .icon-frame {
-    width: 80px; //統一icon的寬
-    background-color: #0072c6;
-    // margin-right: 60px;
-  }
+}
 
 
 
-  //捷運
-  //板南線
-  .BL-information{
-   span:nth-child(1){
-    width: 15%;
-   }
-   span:nth-child(2){
-    width: 25%;
-   }
-   span:nth-child(3){
-    width: 15%;
-   }
-  }
 
-  .BL-words-color {
-    color: #0087d4;
-  }
+//公車終點站
+.bus-time {
+  width: 90%;
 
-  .BL-frame {
-    width: 200px; //可改fit-content
-    border: 1px solid #0072c6;
-    // margin-right: 60px;
-  }
-
-  //松山新店線
-  .G-information{
-    span:nth-child(1){
-     width: 15%;
-    }
-    span:nth-child(2){
-     width: 25%;
-    }
-    span:nth-child(3){
-     width: 15%;
-    }
-   }
-  .G-words {
-    color: #007c59;
-  }
-
-  .G {
-    background-color: #007c59;
-    // margin-right: 60px;
+  a {
+    text-decoration: none;
   }
 
 }
+
+//公車地圖
+.bus-map {
+  width: 90%;
+}
+
+
+.bus-terminal {
+  width: 48%;
+}
+
+.bus-arrival {
+  width: 48%;
+}
+
+.Bus-information {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  span {
+    width: 33%; //藍29 & 描述 & 幾分鐘後到分成3等分
+  }
+}
+
+.bus-white {
+  width: fit-content; //img外以圖片大小為主
+  margin: 0 auto; //置中
+
+  img {
+    margin: 24px 40px;
+  }
+}
+
+
+
+//公車介面內捷運圖示
+.icon-frame {
+  width: 80px; //統一icon的寬
+  background-color: #0072c6;
+  // margin-right: 60px;
+}
+
+
+
+//捷運
+//板南線
+.BL-information {
+  span:nth-child(1) {
+    width: 15%;
+  }
+
+  span:nth-child(2) {
+    width: 25%;
+  }
+
+  span:nth-child(3) {
+    width: 25%;
+  }
+}
+
+.BL-words-color {
+  color: #0087d4;
+}
+
+.BL-frame {
+  width: 200px; //可改fit-content
+  border: 1px solid #0072c6;
+  // margin-right: 60px;
+}
+
+//松山新店線
+.G-information {
+  span:nth-child(1) {
+    width: 15%;
+  }
+
+  span:nth-child(2) {
+    width: 25%;
+  }
+
+  span:nth-child(3) {
+    width: 25%;
+  }
+}
+
+.G-words {
+  color: #007c59;
+}
+
+.G {
+  background-color: #007c59;
+  // margin-right: 60px;
+}
+
+
 
 //捷運內容
 .mrt-wrap {
@@ -209,16 +276,43 @@
 }
 
 
-//Youbike
-//youbike
+.mrt-time {
+  width: 90%;
 
-.youbike-wrap{
-  .youbike-block{
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.mrt-terminal {
+  width: 48%;
+  background-color: gray;
+}
+
+.mrt-arrival {
+  width: 48%;
+  background-color: gray;
+}
+
+.Bus-information {
+  background-color: rgba(255, 255, 255, 0.7);
+
+  span {
+    width: 33%; //藍29 & 描述 & 幾分鐘後到分成3等分
+  }
+}
+
+
+//Youbike
+.youbike-wrap {
+  .youbike-block {
     width: 45%;
   }
 }
+
 .youbike-block {
-  
+
   width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
   height: 100%;
   background-color: rgba(white, 0.3);
@@ -248,3 +342,7 @@
 
 
 }
+
+
+
+//物業網站

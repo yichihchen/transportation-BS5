@@ -9,9 +9,8 @@ img {
     vertical-align: middle;
 }
 
-
 .container {
-    max-width: 992px; // (696 + 24 gutter)
+    max-width: 992px; // (696 + 24 gutter) 有下等於沒下????
     margin: 0 auto;
     padding: 0 12px;   //不可刪除
 
@@ -25,6 +24,12 @@ a {
     text-decoration: none;
 }
 
-ol, ul {
+ol, ul{
     list-style: none;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
     }
