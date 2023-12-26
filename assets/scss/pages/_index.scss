@@ -25,21 +25,31 @@ a.tab {
 .tab-wrap {
   display: flex;
   flex-wrap: wrap;
-  div{
+
+  div {
     width: 100%;
-   }
-   //按鈕排列RWD
+  }
 
-  @media(min-width:540px){
-    div{
+  //按鈕排列RWD
+
+  @media(min-width:540px) {
+    div {
       width: 50%;
-     }
-  }
-  @media(min-width:800px) {
-    flex-wrap: nowrap;
+    }
   }
 
-  
+  @media(min-width:768px) {
+    div {
+      max-width: 280px;  //縮小左右按鈕間距
+    }
+  }
+
+  @media(min-width:860px) {
+    flex-wrap: nowrap;
+
+  }
+
+
 
 
 
