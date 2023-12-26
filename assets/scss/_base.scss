@@ -2,7 +2,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    
 }
+
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -13,8 +17,8 @@ img {
     max-width: 992px; // (696 + 24 gutter) 有下等於沒下????
     margin: 0 auto;
     padding: 0 12px;   //不可刪除
-
-    //  @include mobile() {
+    
+    
     //   min-width: 320px; // (696 + 24 gutter)
     
     // }

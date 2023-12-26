@@ -1,16 +1,8 @@
 .container {
   // background: linear-gradient(170deg, #E2D5D2 2%, #64E8E7 20%, #5690D9 80%);
-  background: linear-gradient(320deg, #334c6d 10%, #5690D9 90%);
+  background: linear-gradient(320deg, #190b67 10%, #288ddb 90%);
+
 }
-
-// .wrap div {
-
-
-//   @media (min-width:768px) {
-//     width: 50%;
-//   }
-
-// }
 
 
 //消除掉icon旁邊兩個點點
@@ -31,6 +23,26 @@ a.tab {
 
 //tab icon大小
 .tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  div{
+    width: 100%;
+   }
+   //按鈕排列RWD
+
+  @media(min-width:540px){
+    div{
+      width: 50%;
+     }
+  }
+  @media(min-width:800px) {
+    flex-wrap: nowrap;
+  }
+
+  
+
+
+
   svg {
     width: 50px;
     height: 50px;
@@ -41,63 +53,122 @@ a.tab {
 //四個大按鈕
 
 .bus {
-  width: 200px;
-  height: 200px;
-  // background-color: #ff844f; //更改透明度
-  // border-radius: 50%;
-  // border: 16px solid rgba(255, 255, 255, 0.4); //設定跟其他按鈕不一樣喔
-  background-image: url(/assets/images/公車按鈕AI.png);
-  
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: 16px solid rgba(255, 255, 255, 0.4); //設定跟其他按鈕不一樣喔
+  overflow: hidden; //讓效果發生在border-radius
+  //按鈕底下陰影效果
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
+
+  &:hover {
+    background-color: #5dcff8;
+  }
 }
 
 
 
 
 .mrt {
-  width: 200px;
-  height: 200px;
-  // background-color: #5dcff8;
-  // border-radius: 50%;
-  // border: 16px solid rgba(255, 255, 255, 0.4);
-  // // background: linear-gradient(to left, #36b8b9, #247c7c);
-  background-image: url(/assets/images/公車按鈕AI-藍.png);
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: 16px solid rgba(255, 255, 255, 0.4);
+  // overflow: hidden; //讓效果發生在border-radius
+  //按鈕底下陰影效果
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
+
+  &:hover {
+    background-color: #5dcff8;
+  }
+
+  //ripples實踐
+  &:hover::before {
+    transform: scale(1, 1);
+    background-color: #4f7eff;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0, 1);
+    transition: all .6s;
+    z-index: -1;
+    transition: transform .3s, opacity .5s;
+  }
+
+
+
 }
 
 .youbike {
-  width: 200px;
-  height: 200px;
-  // background-color: #5675e3;
-  // border-radius: 50%;
-  // border: 16px solid rgba(255, 255, 255, 0.4);
-  background-image: url(/assets/images/公車按鈕AI-紫.png);
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: 16px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden; //讓效果發生在border-radius
+  //按鈕底下陰影效果
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
+
+  &:hover {
+    background-color: #5dcff8;
+  }
+
 }
 
 .management {
-  width: 200px;
-  height: 200px;
-  // background-color: #fa5a7d;
-  // border-radius: 50%;
-  // border: 16px solid rgba(255, 255, 255, 0.4);
-  background-image: url(/assets/images/公車按鈕AI-紅.png);
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  border: 16px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden; //讓效果發生在border-radius
+  //按鈕底下陰影效果
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
+
+  &:hover {
+    background-color: #5dcff8;
+  }
 }
 
+//tabs效果
 
 .tab-content {
   display: none;
+}
+
+.active {
+  display: block;
 }
 
 .tab-content.active {
   display: block;
 }
 
+.sub-tab-content {
+  display: none;
+}
+
+.sub-tab-content.active {
+  display: block;
+}
+
 // 公車內容
 //這些顏色要補gradient
-.bus-wrap {
+.bus-time {
   .Wanhua-exercise {
     width: 100%;
 
     h6 {
-      background: linear-gradient(to bottom, #ff844f, #d66f43);
+      // background: linear-gradient(to bottom, #ff844f, #d66f43);
+      background: linear-gradient(to bottom, #92d3d7, #26a7ae);
       border-radius: 5rem 0 0 5rem;
 
     }
@@ -107,7 +178,7 @@ a.tab {
     width: 100%;
 
     h6 {
-      background: linear-gradient(to bottom, #36b8b9, #247c7c);
+      background: linear-gradient(to bottom, #5675e3, #3452b1);
 
     }
   }
@@ -117,39 +188,89 @@ a.tab {
 
     h6 {
       background: linear-gradient(to bottom, #5675e3, #3452b1);
+      background: linear-gradient(to bottom, #92d3d7, #26a7ae);
       // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 調整外陰影效果，根據需要調整大小和顏色 */
       border-radius: 0rem 5rem 5rem 0rem;
 
     }
   }
+}
 
-  .bus-title {
-    position: relative;
-    letter-spacing: 6px;
-    /* 調整字間距，可以是負值 */
+
+//bus-time2
+.bus-time {
+
+  .Wanhua-exercise2 {
+    width: 100%;
+    margin-right: 40px;
+
+    h6 {
+      background-color: #b4e4ff;
+
+      border: 1px solid rgb(45, 45, 45);
+      border-radius: 5rem 5rem 5rem 5rem;
+      color: rgb(45, 45, 45);
+
+    }
   }
 
-  //地理位置底線
-  .bus-title::after {
-    position: absolute;
-    content: "";
-    /* 添加內容，這裡是空字符串 */
-    display: block;
-    /* 讓偽元素以區塊元素方式呈現，佔據一行 */
-    width: 60px;
-    /* 底線的寬度 */
-    height: 3px;
-    /* 底線的高度 */
-    background-color: #ffffff;
-    /* 底線的顏色 */
-    margin-top: 12px;
-    /* 距離標題文字的距離，根據需要調整 */
-    // 完全置中
-    transform: translateX(-50%) translateY(-50%);
+  .Luoyang-parkinglot2 {
+    width: 100%;
+    margin-right: 40px;
 
-    left: 50%;
+    h6 {
+      color: black;
+      background-color: rgb(229, 229, 229);
+      border-radius: 5rem 5rem 5rem 5rem;
+      border: 3px solid rgb(45, 45, 45);
+
+    }
+  }
+
+  .Fushin-park2 {
+    width: 100%;
+
+    h6 {
+      color: black;
+      background-color: rgb(229, 229, 229);
+      // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* 調整外陰影效果，根據需要調整大小和顏色 */
+      border-radius: 5rem 5rem 5rem 5rem;
+      border: 3px solid rgb(45, 45, 45);
+      ;
+
+    }
   }
 }
+
+
+//有下底線標題樣式 component
+.underline-title {
+  position: relative;
+  letter-spacing: 6px;
+  /* 調整字間距，可以是負值 */
+}
+
+//地理位置底線
+.underline-title::after {
+  position: absolute;
+  content: "";
+  /* 添加內容，這裡是空字符串 */
+  display: block;
+  /* 讓偽元素以區塊元素方式呈現，佔據一行 */
+  width: 60px;
+  /* 底線的寬度 */
+  height: 3px;
+  /* 底線的高度 */
+  background-color: #ffffff;
+  /* 底線的顏色 */
+  margin-top: 12px;
+  /* 距離標題文字的距離，根據需要調整 */
+  // 完全置中
+  transform: translateX(-50%) translateY(-50%);
+
+  left: 50%;
+}
+
 
 
 
@@ -166,7 +287,7 @@ a.tab {
 
 //公車地圖
 .bus-map {
-  width: 90%;
+  width: 100%;
 }
 
 .Bus-information {
@@ -187,13 +308,21 @@ a.tab {
   }
 }
 
+//公車資訊字體大小
+.B29-arrival,
+.B29-time {
+  @media(min-width:768px) {
+    font-size: 32px;
+  }
+
+  font-size: 16px;
+}
 
 
-//公車介面內捷運圖示
+//公車內:捷運線圖示樣式
 .icon-frame {
-  width: 80px; //統一icon的寬
   background-color: #0072c6;
-  // margin-right: 60px;
+
 }
 
 
@@ -209,7 +338,13 @@ a.tab {
     width: 50%;
   }
 
- }
+  //節運資訊字體大小
+  @media(min-width:768px) {
+    font-size: 32px;
+  }
+
+  font-size: 20px;
+}
 
 .BL-words-color {
   color: #0087d4;
@@ -218,19 +353,19 @@ a.tab {
 .BL-frame {
   width: fit-content;
   border: 1px solid #0072c6;
-  
+
 }
 
 //松山新店線
 .G-information {
   span:nth-child(1) {
-    width: 50%;
+    width: 40%;
   }
 
   span:nth-child(2) {
     width: 50%;
   }
- 
+
 }
 
 .G-words {
@@ -267,13 +402,13 @@ a.tab {
 // 板南線
 .mrt-terminal {
   width: 90%;
-   background-color:#0072c6;
+  background-color: #0072c6;
 }
 
 // 新店線
 .mrt-arrival {
   width: 90%;
-   background-color:#007c59;
+  background-color: #007c59;
 }
 
 .Bus-information {
@@ -284,8 +419,12 @@ a.tab {
 
 //Youbike
 .youbike-wrap {
+
+
+  //兩個大白色區塊比例
   .youbike-block {
-    width: 45%;
+
+    width: 100%;
   }
 }
 
@@ -293,16 +432,16 @@ a.tab {
 
   width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
   height: 100%;
-  background-color: rgba(white, 0.3);
+  background-color: rgba(white, 0.5);
   border-radius: 8px;
-  // border: 2px solid white;
+
 
   .youbike-information {
     padding: 16px 24px;
 
   }
 
-  .youbike-block {
+  .youbike-number {
     background-color: #215DB6;
     border-radius: 10px;
     padding: 16px 36px; //電梯藍色空間
