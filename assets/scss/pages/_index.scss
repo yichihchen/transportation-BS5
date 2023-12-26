@@ -163,7 +163,7 @@ a.tab {
 }
 
 .sub-tab-content {
-  display: none;
+  display: none; /* 新增這一行，將初始顯示設定為隱藏 */
 }
 
 .sub-tab-content.active {
