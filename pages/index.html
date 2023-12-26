@@ -37,7 +37,7 @@
           <a href="#" class="tab" onclick="showTabContent(2)">
             <li class="mrt position-relative "> <span style="font-size: 2em; color: #ffffff;"
                 class="position-absolute top-50 start-50 translate-middle text-center">
-                <i class="fa-solid fa-bus"></i>
+                <i class="fa-solid fa-train-subway"></i>
                 <h5 class="text-white pt-2">捷運</h5>
               </span></li>
 
@@ -129,7 +129,6 @@
 
             <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
               <!-- sub-tab2功能加入-點擊 -->
-
               <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
                   class="sub-tab text-white stretched-link" onclick="toggleSubTabContent(1, 2)">938</a></span>
               <span class="B29-arrival d-inline-block text-center">往捷運台大醫院站</span>
@@ -140,7 +139,7 @@
               <!-- sub tab2內容 -->
               <!-- img外面白色邊框 -->
               <div id="subTabContent1_2" class="sub-tab-content bus-white text-center bg-light rounded">
-                <img src="../assets/images/藍29-裁切.png" class="" alt="938公車路線圖">
+                <img src="../assets/images/938.png" class="" alt="938公車路線圖">
               </div>
             </div>
 
@@ -166,56 +165,49 @@
           </div>
           <!-- mrt map end-->
           <h3 class="underline-title text-white fw-bold my-5">捷運路線</h3>
-          <div class="mrt-time bg-light p-4 rounded">
+          <div class="mrt-time bg-light p-4 rounded ">
 
-            <div class=" d-flex">
-              <div class="mrt-BL-board w-100 me-4">
+            <div class=" flex-wrap d-flex">
+              <div class="mrt-BL-board w-100">
                 <div class="mrt-terminal rounded">
-                  <!-- 增加onclick -->
                   <a href="#" class="sub-tab" onclick="toggleSubTabContent(2, 1)">
                     <h6 class="text-white lh-lg fs-4 text-center m-0">板南線</h6>
                   </a>
                 </div>
                 <!-- 板南線時刻表 -->
                 <div class="BL-information BL-words-color d-flex justify-content-around align-items-center my-3">
-                  <!-- <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span> -->
+
                   <span class="BL01 BL-frame d-inline-block text-center">頂埔</span>
                   <span class="BL01-time d-inline-block text-center">3分鐘後到站</span>
                 </div>
                 <div class="BL-information BL-words-color d-flex justify-content-around align-items-center my-3">
-                  <!-- <span class="BL fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">BL</span> -->
+
                   <span class="BL23 BL-frame d-inline-block text-center">南港展覽館</span>
-                  <span class="BL23-time fs-4  d-inline-block text-center">3分鐘後到站</span>
+                  <span class="BL23-time   d-inline-block text-center">3分鐘後到站</span>
                 </div>
               </div>
 
               <div class="mrt-G-board w-100">
                 <div class="mrt-arrival rounded">
-                  <!-- 增加onclick -->
+
                   <a href="#" class="sub-tab" onclick="toggleSubTabContent(2, 2)">
                     <h6 class="text-white lh-lg fs-4 text-center m-0">新店線</h6>
                   </a>
                 </div>
                 <div class="G-information G-words d-flex justify-content-around align-items-center my-3">
-                  <!-- <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span> -->
+
                   <span class="BL23 BL-frame fs-3 d-inline-block text-center">新店</span>
                   <span class="BL23-time text-center">3分鐘後到站</span>
                 </div>
 
                 <div class="G-information G-words d-flex justify-content-around align-items-center my-3">
-                  <!-- <span class="G fs-2 text-white text-center py-2 rounded icon-frame d-inline-block">G</span> -->
-                  <span class="BL23 BL-frame fs-3 d-inline-block text-center">小碧潭</span>
-                  <span class="BL23-time fs-4 text-center">5分鐘後到站</span>
+
+                  <span class="BL23 BL-frame d-inline-block text-center">小碧潭</span>
+                  <span class="BL23-time text-center">5分鐘後到站</span>
                 </div>
               </div>
 
             </div>
-
-            <!-- station details -->
-
-
-            <!-- station details end-->
-
 
           </div><!-- mrt-time end-->
 
@@ -223,7 +215,6 @@
 
         <div class="text-center pb-4 my-4">
 
-          <!-- 這裡放更換sub tab2的sub-tab的地方 -->
           <div id="subTabContent2_1" class="sub-tab-content"><img src="../assets/images/台北捷運板南線斜式-藍線.png"
               class="rounded" alt="捷運板南線"></div>
           <div id="subTabContent2_2" class="sub-tab-content"><img src="../assets/images/台北捷運松山新店線(2017-11-22).png"
