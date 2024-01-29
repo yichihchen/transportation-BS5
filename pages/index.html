@@ -84,10 +84,9 @@
 
             <img src="../assets/images/mapAll裁切.png" class="my-4 w-100" alt="公車地圖">
 
-
-
           </div>
           <!-- bus map end-->
+
           <!-- bus-time -->
           <div class="bus-map text-center my-4">
             <h3 class="underline-title text-white fw-bold">鄰近公車站牌</h3>
@@ -95,15 +94,15 @@
 
           <div class="bus-time">
             <div class="bustime-station d-flex justify-content-between">
-              <div class="Wanhua-exercise2"><a href="#">
+              <div class="Wanhua-exercise2"><a href="#" class="sub-tab" onclick="showSubTabContent(1, 1)">
                   <h6 class="lh-lg text-center">萬華運動中心</h6>
                 </a>
               </div>
-              <div class="Luoyang-parkinglot2"><a href="#">
+              <div class="Luoyang-parkinglot2"><a href="#" class="sub-tab" onclick="showSubTabContent(1, 2)">
                   <h6 class="lh-lg text-center">洛陽停車場</h6>
                 </a>
               </div>
-              <div class="Fushin-park2"><a href="#">
+              <div class="Fushin-park2"><a href="#" class="sub-tab" onclick="showSubTabContent(1, 3)">
                   <h6 class="lh-lg text-center">福興公園</h6>
                 </a>
               </div>
@@ -111,43 +110,93 @@
             <!-- 站名切換2 end -->
             <!--站名切換 end  -->
 
-            <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
-              <!-- sub-tab1功能加入-點擊-->
-              <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
-                  class="sub-tab text-white stretched-link" onclick="toggleSubTabContent(1, 1)">藍29</a></span>
-              <span class="B29-arrival d-inline-block text-center">往聯合醫院中興院區</span>
-              <span class="B29-time text-center">三分鐘後到站</span>
-            </div>
 
-            <div class="">
-              <!-- sub tab1內容 -->
+            <!-- sub tab1內容 -->
+            <div id="subTabContent1_1" class="sub-tab-content active">
+              <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
+
+                <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
+                    class="text-white stretched-link">藍29</a></span>
+                <!-- 原本a標籤內 onclick="toggleSubTabContent(1, 1)"刪除 -->
+                <span class="B29-arrival d-inline-block text-center">往聯合醫院中興院區</span>
+                <span class="B29-time text-center">三分鐘後到站</span>
+              </div>
+
+
               <!-- img外面白色邊框 -->
-              <div id="subTabContent1_1" class="sub-tab-content bus-white text-center bg-light rounded">
+              <div class="bus-white text-center bg-light rounded">
                 <img src="../assets/images/藍29-裁切.png" class="my-4" alt="藍29公車路線圖">
               </div>
-            </div>
 
-            <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
-              <!-- sub-tab2功能加入-點擊 -->
-              <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
-                  class="sub-tab text-white stretched-link" onclick="toggleSubTabContent(1, 2)">938</a></span>
-              <span class="B29-arrival d-inline-block text-center">往捷運台大醫院站</span>
-              <span class="B29-time text-center">五分鐘後到站</span>
-            </div>
-
-            <div class="mb-4">
-              <!-- sub tab2內容 -->
-              <!-- img外面白色邊框 -->
-              <div id="subTabContent1_2" class="sub-tab-content bus-white text-center bg-light rounded">
-                <img src="../assets/images/938.png" class="" alt="938公車路線圖">
+              <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
+                <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
+                    class="text-white stretched-link">938</a></span>
+                <!--原本a標籤內 onclick="toggleSubTabContent(1, 2)" 刪除-->
+                <span class="B29-arrival d-inline-block text-center">往捷運台大醫院站</span>
+                <span class="B29-time text-center">五分鐘後到站</span>
               </div>
+
+              <div class="mb-4">
+                <!-- img外面白色邊框 -->
+                <div id="" class="bus-white text-center bg-light rounded">
+                  <img src="../assets/images/938.png" class="" alt="938公車路線圖">
+                </div>
+              </div>
+
             </div>
+
+
+            <!-- sub tab2內容 -->
+            <div id="subTabContent1_2" class="sub-tab-content">
+              <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
+
+                <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
+                    class="text-white stretched-link">藍29</a></span>
+                <!-- 原本a標籤內 onclick="toggleSubTabContent(1, 1)"刪除 -->
+                <span class="B29-arrival d-inline-block text-center">往聯合醫院中興院區</span>
+                <span class="B29-time text-center">三分鐘後到站</span>
+              </div>
+
+              <!-- img外面白色邊框 -->
+              <div class="bus-white text-center bg-light rounded mb-4">
+                <img src="../assets/images/藍29-裁切.png" class="my-4" alt="藍29公車路線圖">
+              </div>
+
+
+            </div>
+
+            <!-- sub tab3內容 -->
+            <div id="subTabContent1_3" class="sub-tab-content">
+              <div class="Bus-information my-3 B29-words-color p-2 rounded z-1 d-flex align-items-center">
+
+                <span class="B29 fs-2 text-center py-2 rounded icon-frame d-inline-block position-relative"><a href="#"
+                    class="text-white stretched-link">藍29</a></span>
+                <!-- 原本a標籤內 onclick="toggleSubTabContent(1, 1)"刪除 -->
+                <span class="B29-arrival d-inline-block text-center">往聯合醫院中興院區</span>
+                <span class="B29-time text-center">三分鐘後到站</span>
+              </div>
+
+              <!-- img外面白色邊框 -->
+              <div class="bus-white text-center bg-light rounded mb-4">
+                <img src="../assets/images/藍29-裁切.png" class="my-4" alt="藍29公車路線圖">
+              </div>
+
+
+            </div>
+
+
+
+
+
+
 
           </div><!-- bus-time end-->
-        </div>
+        </div> <!-- bus wrap -->
 
-      </div>
-      <!--  tabContent1 end-->
+      </div> <!--  tabContent1 end-->
+
+
+
 
       <!-- tabContent2  -->
       <div id="tabContent2" class="tab-content">
@@ -294,7 +343,7 @@
         <!-- 物業管理系統內容 -->
         <div class="webFrame text-center">
           <iframe class="website" src="https://www.google.ie/gwt/x?u=[http://116.59.26.232/]" frameborder="0"
-            width="900" height="500">
+            width="400" height="500">
             看不到頁面時才會顯示這行文字
           </iframe>
 
@@ -325,14 +374,93 @@
 
 
       <script>
-        window.onload = function () {
-          toggleSubTabContent(1, 1);   //重新整理後，SubTabContent不會直接跳出來
-        };
+        // window.onload = function () {
+        //   toggleSubTabContent(1, 1);   //重新整理後，SubTabContent不會直接跳出來
+        // };
 
+        // function showTabContent(tabNumber) {
+        //   // (同之前的 showTabContent 函數)
+        //   // 隱藏所有內容
+        //   const tabContents = document.querySelectorAll(".tab-content");
+        //   tabContents.forEach(function (content) {
+        //     content.classList.remove("active");
+        //   });
+
+        //   // 顯示選定的標籤內容
+        //   const selectedTabContent = document.getElementById("tabContent" + tabNumber);
+        //   selectedTabContent.classList.add("active");
+        //   //showTabContent 函數 end
+
+
+        //   //(tabNumber === 1)改成(tabNumber === 0)，再點回公車的tab，藍29下面圖就不會自動跳出來了(?)
+        //   //因為只有tabcontent1下面才有toggle功能，一點選tabcontent1，subcontent自動去除active
+        //   //.sub-tab就是藍29和839按鈕
+        //   if (tabNumber === 1) {
+        //     const subTabs = document.querySelectorAll('.sub-tab');
+        //     subTabs.forEach(function (subTab) {
+        //       subTab.classList.remove('active');
+
+        //     });
+
+        //     //if (tabNumber === 1 )確定這頁在tabcontent1(公車)內之後，繼續跑下面
+        //     const subTabContents = document.querySelectorAll('.sub-tab-content');
+        //     subTabContents.forEach(function (subTabContent) {
+        //       subTabContent.style.display = 'none';
+        //     });
+
+        //     // Activate the first Sub Tab and show its content initially
+        //     toggleSubTabContent(1, 1);
+        //     // 增加
+        //   } else if (tabNumber === 2) {
+        //     resetSubTabsAndContents(2);
+        //     showSubTabContent(2, 1);
+        //   };
+        // }
+        // toggleSubTabContent(1, 1);
+
+        // function toggleSubTabContent(tabNumber, subTabNumber) {
+
+
+        //   // Toggle the Sub Tab Content visibility
+        //   const selectedSubTabContent = document.getElementById('subTabContent' + tabNumber + '_' + subTabNumber);
+        //   if (selectedSubTabContent) {
+        //     const isVisible = selectedSubTabContent.style.display === 'block';
+        //     selectedSubTabContent.style.display = isVisible ? 'none' : 'block';
+        //   }
+
+        //   //將active去除 Deactivate all Sub Tabs for the given Tab
+        //   const subTabs = document.querySelectorAll('.sub-tab');
+        //   subTabs.forEach(function (subTab) {
+        //     subTab.classList.remove('active');
+        //   });
+
+        //   // Activate the selected Sub Tab
+        //   const selectedSubTab = document.querySelector('.sub-tab:nth-child(' + subTabNumber + ')');
+        //   if (selectedSubTab) {
+        //     selectedSubTab.classList.add('active');
+        //   }
+        // }
+
+        // // 增加 resetSubTabsAndContents 函數，用於在 Tab 切換時重置子標籤和內容
+        // function resetSubTabsAndContents(tabNumber) {
+        //   const subTabs = document.querySelectorAll('.sub-tab');
+        //   subTabs.forEach(function (subTab) {
+        //     subTab.classList.remove('active');
+        //   });
+
+        //   const subTabContents = document.querySelectorAll('.sub-tab-content');
+        //   subTabContents.forEach(function (subTabContent) {
+        //     // 只有在相應的 Tab 下才隱藏內容
+        //     if (subTabContent.id.startsWith('subTabContent' + tabNumber + '_')) {
+        //       subTabContent.style.display = 'none';
+        //     }
+        //   });
+
+        // }
         function showTabContent(tabNumber) {
-          // (同之前的 showTabContent 函數)
+          // ... (同之前的 showTabContent 函數)
           // 隱藏所有內容
-          const tabContents = document.querySelectorAll(".tab-content");
+          let tabContents = document.querySelectorAll(".tab-content");
           tabContents.forEach(function (content) {
             content.classList.remove("active");
           });
@@ -342,57 +470,61 @@
           selectedTabContent.classList.add("active");
           //showTabContent 函數 end
 
-
-          //(tabNumber === 1)改成(tabNumber === 0)，再點回公車的tab，藍29下面圖就不會自動跳出來了(?)
-          //因為只有tabcontent1下面才有toggle功能，一點選tabcontent1，subcontent自動去除active
-          //.sub-tab就是藍29和839按鈕
+          // Reset Sub Tabs and Sub Tab Contents for Tab 1
           if (tabNumber === 1) {
-            const subTabs = document.querySelectorAll('.sub-tab');
+            //把所有的subTabs選取起來，並清除active
+            var subTabs = document.querySelectorAll(".sub-tab");
             subTabs.forEach(function (subTab) {
-              subTab.classList.remove('active');
-
+              subTab.classList.remove("active");
             });
 
-            //if (tabNumber === 1 )確定這頁在tabcontent1(公車)內之後，繼續跑下面
-            const subTabContents = document.querySelectorAll('.sub-tab-content');
+            //       所有subcontent內容先隱藏
+            var subTabContents = document.querySelectorAll(".sub-tab-content");
             subTabContents.forEach(function (subTabContent) {
-              subTabContent.style.display = 'none';
+              subTabContent.style.display = "none";
             });
 
             // Activate the first Sub Tab and show its content initially
-            toggleSubTabContent(1, 1);
-            // 增加
+            showSubTabContent(1, 1);
+            //增加
           } else if (tabNumber === 2) {
             resetSubTabsAndContents(2);
             showSubTabContent(2, 1);
-          };
-        }
-        toggleSubTabContent(1, 1);
-
-        function toggleSubTabContent(tabNumber, subTabNumber) {
-
-
-          // Toggle the Sub Tab Content visibility
-          const selectedSubTabContent = document.getElementById('subTabContent' + tabNumber + '_' + subTabNumber);
-          if (selectedSubTabContent) {
-            const isVisible = selectedSubTabContent.style.display === 'block';
-            selectedSubTabContent.style.display = isVisible ? 'none' : 'block';
           }
+        }
 
-          //將active去除 Deactivate all Sub Tabs for the given Tab
-          const subTabs = document.querySelectorAll('.sub-tab');
-          subTabs.forEach(function (subTab) {
-            subTab.classList.remove('active');
+        function showSubTabContent(tabNumber, subTabNumber) {
+          // Hide all Sub Tab Contents for the given Tab
+          const subTabContents = document.querySelectorAll(".sub-tab-content");
+          subTabContents.forEach(function (subTabContent) {
+            subTabContent.style.display = "none";
           });
 
+          // Deactivate all Sub Tabs for the given Tab
+          const subTabs = document.querySelectorAll(".sub-tab");
+          subTabs.forEach(function (subTab) {
+            subTab.classList.remove("active");
+          });
+
+          // Show the selected Sub Tab Content
+          const selectedSubTabContent = document.getElementById(
+            "subTabContent" + tabNumber + "_" + subTabNumber
+          );
+          if (selectedSubTabContent) {
+            selectedSubTabContent.style.display = "block";
+          }
+
           // Activate the selected Sub Tab
-          const selectedSubTab = document.querySelector('.sub-tab:nth-child(' + subTabNumber + ')');
+          const selectedSubTab = document.querySelector(
+            ".sub-tab:nth-child(" + subTabNumber + ")"
+          );
           if (selectedSubTab) {
-            selectedSubTab.classList.add('active');
+            selectedSubTab.classList.add("active");
           }
         }
 
-        // 增加 resetSubTabsAndContents 函數，用於在 Tab 切換時重置子標籤和內容
+
+        // 新增 resetSubTabsAndContents 函數，用於在 Tab 切換時重置子標籤和內容
         function resetSubTabsAndContents(tabNumber) {
           const subTabs = document.querySelectorAll('.sub-tab');
           subTabs.forEach(function (subTab) {
@@ -401,14 +533,9 @@
 
           const subTabContents = document.querySelectorAll('.sub-tab-content');
           subTabContents.forEach(function (subTabContent) {
-            // 只有在相應的 Tab 下才隱藏內容
-            if (subTabContent.id.startsWith('subTabContent' + tabNumber + '_')) {
-              subTabContent.style.display = 'none';
-            }
+            subTabContent.style.display = 'none';
           });
-
         }
-
 
 
 
