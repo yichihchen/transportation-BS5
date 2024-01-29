@@ -60,12 +60,27 @@ a.tab {
 //四個大按鈕
 
 .bus {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
+
+  span {
+    font-size: 1em;
+  }
+
+  @media(min-width:600px) {
+    width: 160px;
+    height: 160px;
+
+    span {
+      font-size: 2em;
+    }
+
+  }
+
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   border: 16px solid rgba(255, 255, 255, 0.4); //設定跟其他按鈕不一樣喔
-  overflow: hidden; //讓效果發生在border-radius
+  // overflow: hidden; //讓效果發生在border-radius
   //按鈕底下陰影效果
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
 
@@ -75,11 +90,25 @@ a.tab {
 }
 
 
-
-
 .mrt {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
+
+  span {
+    font-size: 1em;
+  }
+
+
+  @media(min-width:600px) {
+    width: 160px;
+    height: 160px;
+
+    span {
+      font-size: 2em;
+    }
+
+  }
+
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   border: 16px solid rgba(255, 255, 255, 0.4);
@@ -115,12 +144,27 @@ a.tab {
 }
 
 .youbike {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
+
+  span {
+    font-size: 1em;
+  }
+
+  @media(min-width:600px) {
+    width: 160px;
+    height: 160px;
+
+    span {
+      font-size: 2em;
+    }
+
+  }
+
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   border: 16px solid rgba(255, 255, 255, 0.4);
-  overflow: hidden; //讓效果發生在border-radius
+  // overflow: hidden; //讓效果發生在border-radius
   //按鈕底下陰影效果
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.26);
 
