@@ -9,31 +9,39 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>index</title>
-  <script type="module" crossorigin src="/transportation-BS5/assets/index-897c6519.js"></script>
-  <link rel="stylesheet" href="/transportation-BS5/assets/index-a4951ad9.css">
+  <script type="module" crossorigin src="/transportation-BS5/assets/index-6aa0a48e.js"></script>
+  <link rel="stylesheet" href="/transportation-BS5/assets/index-9e9c0e3a.css">
 </head>
 
 <body>
-  <div class="container p-0">
-    <h1 class="logo ps-4 py-2 m-0"><a href="index.html" class="" >福興公宅</a></h1>  
-</div>
+  <!-- header -->
+<div class="container p-0 header">
+  <div class="d-flex header-content align-items-center justify-content-between">
+      <h1 class="logo ps-4 py-2 m-0 d-flex align-items-center"><a href="index.html" class="">福興公宅</a>
+          <p class="m-0 fw-bold">福興公宅</p>
+      </h1>
 
-    <div class="container px-0">
-      <!-- 地圖滿版 -->
-      <div class="mb-5">
+      <div class="managementAll text-center">
         <a href="javascript:void(0)" class="tab" onclick="showTabContent(4)">
-          <li class="management position-relative"> <span style="color: #ffffff;"
-              class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+          <li class="management-button">
+            <span style="color: #ffffff;" class="management-icon text-center">
               <!-- span樣式跟其他不一樣 -->
               <i class="fa-solid fa-building-circle-arrow-right"></i>
-              <p class="text-white m-0">物業管理系統</p>
+              <span class="management-words text-white m-0">物業管理系統</span>
             </span>
           </li>
         </a>
       </div>
+      
+  </div>
+</div>
+
+    <div class="container px-0">
+      <!-- 地圖滿版 -->
+
 
       <ul class="tab-wrap d-flex justify-content-center justify-content-md-center ps-0">
-        <div class="d-flex flex-column align-items-center mb-3">
+        <div class="d-flex flex-column align-items-center m-3">
           <a href="javascript:void(0)" class="tab" onclick="showTabContent(1)">
             <li class="bus position-relative">
 
@@ -47,7 +55,7 @@
           </a>
         </div>
 
-        <div class="d-flex flex-column align-items-center mb-3">
+        <div class="d-flex flex-column align-items-center m-3">
           <a href="javascript:void(0)" class="tab" onclick="showTabContent(2)">
             <li class="mrt position-relative"> <span style="color: #ffffff;"
                 class="position-absolute top-50 start-50 translate-middle text-center">
@@ -57,21 +65,21 @@
 
           </a>
         </div>
-        <div class="d-flex flex-column align-items-center mb-3">
-          <a href="#" class="tab" onclick="showTabContent(3)">
+        <div class="d-flex flex-column align-items-center m-3">
+          <a href="javascript:void(0)" class="tab" onclick="showTabContent(3)">
             <li class="youbike position-relative ">
-
-              <span style="color: #ffffff;"
-                class="position-absolute top-50 start-50 translate-middle text-center">
+              <span style="color: #ffffff;" class="position-absolute top-50 start-50 translate-middle text-center">
                 <i class="fa-solid fa-bicycle"></i>
                 <p class="text-white m-0">Youbike</p>
               </span>
             </li>
           </a>
         </div>
+
+
       </ul>
 
-
+  
       <!-- wrap -->
 
 
@@ -85,9 +93,19 @@
           <!-- 不要橫式結構要改 -->
           <!-- bus map -->
           <div class="bus-map text-center">
-            <h3 class="underline-title text-white fw-bold">地理位置</h3>
-
-            <img src="/transportation-BS5/assets/mapAll裁切-bcf589a2.png" class="my-4 w-100" alt="公車地圖">
+            <h3 class="underline-title text-white fw-bold mt-3">地理位置</h3>
+            <!-- 公車地圖區塊切換-萬華運動中心-->
+            <div id="subTabContent1_1" class="sub-tab-content active">
+              <img src="/transportation-BS5/assets/公車站-萬華運動中心-5aee17a4.png" class="my-4 w-100" alt="公車站-萬華運動中心">
+            </div>
+            <!-- 公車地圖區塊切換-洛陽停車場-->
+            <div id="subTabContent1_2" class="sub-tab-content">
+              <img src="/transportation-BS5/assets/公車站-洛陽停車場-840bdb39.png" class="my-4 w-100" alt="公車站-洛陽停車場">
+            </div>
+            <!-- 公車地圖區塊切換-福星公園-->
+            <div id="subTabContent1_3" class="sub-tab-content">
+              <img src="/transportation-BS5/assets/公車站-福星公園-68421c22.png" class="my-4 w-100" alt="公車站-福星公園">
+            </div>
 
           </div>
           <!-- bus map end-->
@@ -99,11 +117,13 @@
 
           <div class="bus-time">
             <div class="bustime-station d-flex justify-content-between">
-              <div class="Wanhua-exercise2"><a href="javascript:void(0)" class="sub-tab" onclick="showSubTabContent(1, 1)">
+              <div class="Wanhua-exercise2"><a href="javascript:void(0)" class="sub-tab"
+                  onclick="showSubTabContent(1, 1)">
                   <h6 class="lh-lg text-center">萬華運動中心</h6>
                 </a>
               </div>
-              <div class="Luoyang-parkinglot2"><a href="javascript:void(0)" class="sub-tab" onclick="showSubTabContent(1, 2)">
+              <div class="Luoyang-parkinglot2"><a href="javascript:void(0)" class="sub-tab"
+                  onclick="showSubTabContent(1, 2)">
                   <h6 class="lh-lg text-center">洛陽停車場</h6>
                 </a>
               </div>
@@ -207,7 +227,7 @@
           <!-- 不要橫式結構要改 -->
           <!-- bus map -->
           <div class="bus-map text-center">
-            <h3 class="underline-title text-white fw-bold ">地理位置</h3><img src="/transportation-BS5/assets/mapAll裁切-bcf589a2.png"
+            <h3 class="underline-title text-white fw-bold mt-3">地理位置</h3><img src="/transportation-BS5/assets/mapAll裁切-bcf589a2.png"
               class="w-100 my-4" alt="捷運地圖">
 
 
@@ -266,12 +286,6 @@
 
         <div class="text-center pb-4 my-4">
 
-          <!-- <div id="subTabContent2_1" class="sub-tab-content"><img src="../assets/images/台北捷運板南線斜式-藍線.png"
-              class="rounded" alt="捷運板南線"></div> -->
-          <!-- <div id="subTabContent2_2" class="sub-tab-content"><img src="../assets/images/台北捷運松山新店線(2017-11-22).png"
-              class="rounded" alt="捷運新店線"></div> -->
-
-
         </div>
 
 
@@ -283,7 +297,7 @@
         <!-- YouBike內容 -->
 
         <!-- 捷運信義安和 -->
-        <div class="youbike-wrap d-flex flex-wrap flex-md-nowrap justify-content-center pb-4">
+        <div class="youbike-wrap d-flex flex-wrap flex-md-nowrap justify-content-center">
           <!-- luoyang -->
           <div class="youbike-block luoyang m-2">
             <!-- m-2擠出白色外面邊框 -->
@@ -308,7 +322,7 @@
           </div>
           <!-- youbike-block end -->
 
-
+          <!-- kaifeng -->
           <div class="youbike-block kaifeng m-2">
             <!-- m-2擠出白色外面邊框 -->
             <div class="d-flex align-items-center mt-2">
@@ -319,7 +333,7 @@
 
 
             <div class="youbike-information d-flex justify-content-center">
-              <!-- kaifeng -->
+
               <div class="youbike-number kaifeng text-center">
                 <p class="text-white m-0 fs-2 fw-bold">10台</p>
               </div>
@@ -333,8 +347,87 @@
 
           </div>
           <!-- youbike-block end -->
+
+
         </div>
-        <!-- youbike-wrap -->
+        <!-- youbike-wrap end-->
+
+        <!-- farm -->
+        <div class="farm-wrap">
+
+          <div class="farm-block m-2 pt-2">
+            <!-- m-2擠出白色外面邊框 -->
+            <div class="d-flex align-items-center">
+              <span
+                class="farm-title-frame position-relative d-flex d-inline-block align-items-center justify-content-center"><span
+                  class="fw-bold">RF 智慧農園</span></span>
+            </div>
+          
+
+            <div class="farm-information d-flex justify-content-center">
+              <div class="farm-number text-center me-2">
+                <p class="text-white m-0 fs-2">溫度</p>
+                <p class="text-white m-0 fs-2">19.0<span>˚C</span></p>
+              </div>
+              <div class="farm-number text-center">
+                <p class="text-white m-0 fs-2">濕度</p>
+                <p class="text-white m-0 fs-2">30.3<span>%</span></p>
+              </div>
+            </div>
+
+          </div> <!-- farm-block end -->
+        </div> <!-- farm-wrap -->
+
+        <!-- farm -->
+        <div class="farm-wrap">
+          <div class="farm-block m-2 pt-2">
+            <!-- m-2擠出白色外面邊框 -->
+            <div class="d-flex align-items-center">
+              <span
+                class="farm-title-frame position-relative d-flex d-inline-block align-items-center justify-content-center"><span
+                  class="fw-bold">15F 智慧農園</span></span>
+            </div>
+
+            
+            <div class="farm-information d-flex justify-content-center">
+              <div class="farm-number text-center me-2">
+                <p class="text-white m-0 fs-2">溫度</p>
+                <p class="text-white m-0 fs-2">24.0<span>˚C</span></p>
+              </div>
+              <div class="farm-number text-center">
+                <p class="text-white m-0 fs-2">濕度</p>
+                <p class="text-white m-0 fs-2">25.3<span>%</span></p>
+              </div>
+            </div>
+
+          </div> <!-- farm-block end -->
+        </div> <!-- farm-wrap -->
+
+        <!-- farm -->
+        <div class="farm-wrap">
+          <div class="farm-block m-2 pt-2">
+            <!-- m-2擠出白色外面邊框 -->
+            <div class="d-flex align-items-center">
+              <span
+                class="farm-title-frame position-relative d-flex d-inline-block align-items-center justify-content-center"><span
+                  class="fw-bold">10F 智慧農園</span></span>
+            </div>
+
+
+            <div class="farm-information d-flex justify-content-center">
+              <div class="farm-number text-center me-2">
+                <p class="text-white m-0 fs-2">溫度</p>
+                <p class="text-white m-0 fs-2">22.0<span>˚C</span></p>
+              </div>
+              <div class="farm-number text-center">
+                <p class="text-white m-0 fs-2">濕度</p>
+                <p class="text-white m-0 fs-2">26.3<span>%</span></p>
+              </div>
+            </div>
+
+          </div> <!-- farm-block end -->
+        </div> <!-- farm-wrap -->
+
 
       </div>
       <!-- tabContent3 end -->
@@ -343,15 +436,91 @@
       <!-- tabContent4 -->
       <div id="tabContent4" class="tab-content">
         <!-- 物業管理系統內容 -->
-        <div class="webFrame text-center">
-          <iframe class="website" src="https://www.google.ie/gwt/x?u=[http://116.59.26.232/pad/]" frameborder="0"
-            >
-            看不到頁面時才會顯示這行文字
-            
-          </iframe>
-          <p><a href="http://116.59.26.232/pad/">1234</a></p>
+        <div class="management-button">
+          <a href="http://116.59.26.232/pad/" class="tab">
+            <ul class="d-flex p-0 m-0">
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <!-- <i class="fa-solid fa-building-circle-arrow-right"></i> -->
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABkCAYAAACFHB7kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyRTc3MzczMjg1RTNFMjExOUU2OUFEM0U2RkUxRTg5OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MjA4Q0I0OEUzQUQxMUUyOTNBRkE4NTI0QjZFMzNCQyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MjA4Q0I0N0UzQUQxMUUyOTNBRkE4NTI0QjZFMzNCQyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNzczNzMyODVFM0UyMTE5RTY5QUQzRTZGRTFFODk5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNzczNzMyODVFM0UyMTE5RTY5QUQzRTZGRTFFODk5Ii8+IDwvcmRmOkRlc2NyaXB0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" alt="事件紀錄" class="py-2">
+                  <p class="text-white m-0">事件紀錄</p>
+                </span>
+              </li>
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="/transportation-BS5/assets/analysis-2844d6ca.png" alt="分析圖表">
+                  <p class="text-white m-0">分析圖表</p>
+                </span>
+              </li>
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="/transportation-BS5/assets/icon_property-8926cf69.png" alt="物業報表">
+                  <p class="text-white m-0">物業報表</p>
+                </span>
+              </li>
+            </ul>
 
-        </div>
+            <ul class="d-flex p-0 m-0">
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <!-- <i class="fa-solid fa-building-circle-arrow-right"></i> -->
+                  <img src="data:image/png;base64,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" alt="社區資訊">
+                  <p class="text-white m-0">社區資訊</p>
+                </span>
+              </li>
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="/transportation-BS5/assets/icon_lost-e30c603f.png" alt="待領物件">
+                  <p class="text-white m-0">待領物件</p>
+                </span>
+              </li>
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="/transportation-BS5/assets/icon_resident-9735760c.png" alt="住戶交辦">
+                  <p class="text-white m-0">住戶交辦</p>
+                </span>
+              </li>
+            </ul>
+            <ul class="d-flex p-0 m-0">
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="/transportation-BS5/assets/icon_reserve-8e2c5896.png" alt="公設預約">
+                  <p class="text-white m-0">公設預約</p>
+                </span>
+              </li>
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="/transportation-BS5/assets/icon_time-d402c770.png" alt="點數管理">
+                  <p class="text-white m-0">點數管理</p>
+                </span>
+              </li>
+              <li class="management position-relative">
+                <span style="color: #ffffff;"
+                  class="position-absolute top-50 start-50 translate-middle text-center d-inline-block w-100">
+                  <!-- span樣式跟其他不一樣 -->
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAABkCAYAAACFHB7kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODkxNDQ0NjNDMTUzMTFFMzgzQUJFRDU1QkYzNjZGQjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODkxNDQ0NjRDMTUzMTFFMzgzQUJFRDU1QkYzNjZGQjUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4OTE0NDQ2MUMxNTMxMUUzODNBQkVENTVCRjM2NkZCNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4OTE0NDQ2MkMxNTMxMUUzODNBQkVENTVCRjM2NkZCNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlLBzi8AAAR+SURBVHja7J1RSBRBGMfHvDsQBEMIAqMIBCFQBONACARB8CECoV6KQAiEoIcwiqToIYp8CZSkpyIx6qUQEqIoDCMpCn2SIkgQROkoEARB8pDr+9qptuW03Z3b2W/v/n/4I7fs3O3Oz5n5Zu+buapCoaAg2dqBKgAkCJAACRKiVNAC+XwetWaodDotuiW1kt+QOaT8QR4j1wmv037yN33NX8l9ti+gKmgIbtiSXpC7PMfOkoeFAmokf/Ec2yTvJK+Va0uqKXJst+BWVOx6q8n1CBygknV3zeRr5DZyA6pyS82Tp8mXycthuruwkNp1AFANBr61Qm5hULbGpCEACiwexy5ZmSe5Qmm3uDnf91HuvI6Y3HpKnhBasdyNXylyfEC3jO2UIZ8mH3Ady9ock9yFcuR95A0fxe+QT3mOHSM/FgqJ53BL5FrP/e7RobgfyEuu13Pc5QXt7lIluJF5n4BY5/R/YJ3roqUCYq2SD5OPu46N+ASkdKCwajphT8Vw0xcSNpa81o5NmCclQIAESBAgAVKi1EO+RZ7R0wP2Z/Kkcr5qqE/yzaUSDucQ+V6RCTKrSbtTg+L52Du0JLvqJk9tAajYpJLP7QUke+Lu64EK9vyQH9PcJu8HJHtjUJhxhr/EOwNIdtRlULYdkOzI5Cv3RkCyoxqDsnWAJB9SBpDkaw2Q7GjToGwOkKIXz41qYwIMSAGeNJhEaPyoqAOQolWTkPcApG30oQTj2TQgRSuu4OsG5XmBwCdAil5Xyd9DlFsn30XgYEecQjYaotyEBgVIljQcosJHknijSYbEiYeDAQFNA5J9cQDxysd5L3XAoADJvvyG07kkPmkoF0h71b952lupQ58LSJb1eyV7o0+YfG4bINkTp2i9D9g6+Ny3ylnIlQGk6NSp4dwMWdFchtf5flROMgsglVCcPDKpnS3B+3EXOa6BZwHJHM4z3U11RvD+WQ1qXDIsqZCO6IGe4XRb+LweDWtKCfyuSRqkk8pJtH+inDxv2+rQoGZ8hvZWJClhn1dpjwm5Fg7VOY2Z1/c+R0v6K4nLU0RcExaRIQSHAAmQrEviU+oNCRchKbrjLKBBQQHEqoTIThokbkkD6NwwJgESBEiABAESlPDojhcpB9kNmTN/ll2veb1Sq4X50lwlQ+ol3whw/qAnVOcFZTMRX+OicrYwRXcHARIgQeU9Jo0qJ1c7SODgFi/5P2ghcKhoSDlltmyfn/nNoiVVZgi+oP6/iz5C8JhD8BPkhwgcIEACJAghuIAQfAGQEIKju0N3V1rxqom4FnStqAQkv0iAxBPRvpg+ezEJkNDdYUyCyim6m43xswHJ5zxpFO0F3R0gQYAESKiCyoCEH6rfXhkJkHgnkaNgURTORWX24ydGIfiG6z+EW9Ij5eQd5MDmj3hXsF2eY+s2IfGvTHq3d2lQwRJKKlGhNp6vKhQKgQrk83n+06ycvXhqUO++xT1NC3klnU5bgcTi7cj6VQK2IotZPDTwPrGc5fQrRcwmJCikIocEYTILARIgQRHppwADAPSv6GiLDEYOAAAAAElFTkSuQmCC" alt="訪客管理">
+                  <p class="text-white m-0">訪客管理</p>
+                </span>
+              </li>
+            </ul>
+          </a>
+        </div> <!-- management-button -->
       </div><!-- tabContent4 end -->
 
 
@@ -501,7 +670,7 @@
           const subTabContents = document.querySelectorAll(".sub-tab-content");
           subTabContents.forEach(function (subTabContent) {
             subTabContent.style.display = "none";
-            
+
           });
 
           // Deactivate all Sub Tabs for the given Tab
@@ -541,14 +710,7 @@
           });
         }
 
-        //點擊置頂預設
-        function preventScroll(event) {
-          // 阻止預設的點擊行為
-          event.preventDefault();
-
-          // 在這裡可以添加其他處理邏輯
-        }
-
+      
       </script>
 </body>
 
