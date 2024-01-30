@@ -180,10 +180,12 @@ a.tab {
 
 .managementAll {
   //物業管理系統按鈕
-  width: 30%;
+  width: 48%;
   height: 100%;
-  // background-color:white;
  
+  @media(min-width:600px) {
+    width: 30%;
+  }
 
   .management-words {
     font-size: 16px;
