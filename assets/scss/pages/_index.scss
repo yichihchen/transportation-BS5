@@ -540,7 +540,7 @@ a.tab {
 
   width: fit-content; //改成寬度跟內容一樣大小 這裡就不用position了
   height: 100%;
-  background-color: rgba(white, 0.5);
+  background-color: rgba(white, 0.35);
   border-radius: 8px;
 
   a {
@@ -579,7 +579,7 @@ a.tab {
 .farm-block {
 
   height: 100%;
-  background-color: rgba(white, 0.5);
+  background-color: rgba(white, 0.35);
   border-radius: 8px;
 
 
@@ -595,7 +595,7 @@ a.tab {
 
   .farm-title-frame {
     width: 50%;
-    padding: 4px 48px; //標題白色空間
+    padding: 4px 32px; //標題白色空間
     border-radius: 0 5rem 5rem 0;
     background-color: #fff;
     color: #617DB3;
