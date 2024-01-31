@@ -182,7 +182,7 @@ a.tab {
   //物業管理系統按鈕
   width: 48%;
   height: 100%;
- 
+
   @media(min-width:600px) {
     width: 30%;
   }
@@ -528,10 +528,16 @@ a.tab {
   background-color: rgba(white, 0.5);
   border-radius: 8px;
 
+  a {
+    text-decoration: none;
+  }
 
   .youbike-information {
     padding: 16px 24px;
-
+    color: white;
+    &:hover{
+      color:#215DB6;
+    }
   }
 
   .youbike-number {
@@ -579,7 +585,7 @@ a.tab {
     color: #617DB3;
     font-size: 16px;
 
-    @media(min-width:600px){
+    @media(min-width:600px) {
       font-size: 24px;
     }
 
