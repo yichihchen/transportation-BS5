@@ -181,22 +181,26 @@ a.tab {
   width: 20%;
   height: 100%;
 
-  @media(min-width:600px) {
-    width: 40%;
-  }
+
   @media(min-width:400px) {
     width: 30%;
   }
 
-  .management-words {
-    display:none;
+  @media(min-width:600px) {
+    width: 40%;
+  }
 
-    @media(min-width:600px) {
-      font-size: 18px;
-    }
+  .management-words {
+    display: none;
+
+
     @media(min-width:500px) {
       font-size: 16px;
-      display:inline-block;
+      display: inline-block;
+    }
+
+    @media(min-width:600px) {
+      font-size: 24px;
     }
   }
 
