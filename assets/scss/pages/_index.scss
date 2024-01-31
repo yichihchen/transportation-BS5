@@ -1,5 +1,4 @@
 .container {
-  // background: linear-gradient(170deg, #E2D5D2 2%, #64E8E7 20%, #5690D9 80%);
   background: linear-gradient(320deg, #190b67 10%, #288ddb 90%);
 
 }
@@ -46,19 +45,14 @@ a.tab {
 
 //tab icon大小
 .tab-wrap {
-  display: flex;
-  flex-wrap: wrap;
-
-  // div {
-  //   // width: 30%; //手機大小按鈕一排3個
-  //   flex-wrap: nowrap;
-  // }
+   flex-wrap: wrap;
+  
 
   //按鈕排列RWD
 
   @media(min-width:540px) {
     div {
-      width: 30%; //可省略
+      width: calc(100%/3); //可省略
     }
   }
 
@@ -71,9 +65,6 @@ a.tab {
   @media(min-width:300px) {
     //PC版待調整
     flex-wrap: nowrap;
-    div{
-      max-width: 64px;  //三個按鈕的間距
-    }
 
   }
 
@@ -538,8 +529,9 @@ a.tab {
   .youbike-information {
     padding: 16px 24px;
     color: white;
-    &:hover{
-      color:#215DB6;
+
+    &:hover {
+      color: #215DB6;
     }
   }
 
@@ -597,5 +589,3 @@ a.tab {
 }
 
 
-
-//物業網站
