@@ -49,28 +49,31 @@ a.tab {
   display: flex;
   flex-wrap: wrap;
 
-  div {
-    // width: 30%; //手機大小按鈕一排3個
-    flex-wrap: nowrap;
-  }
+  // div {
+  //   // width: 30%; //手機大小按鈕一排3個
+  //   flex-wrap: nowrap;
+  // }
 
   //按鈕排列RWD
 
   @media(min-width:540px) {
     div {
-      width: 33%; //可省略
+      width: 30%; //可省略
     }
   }
 
   @media(min-width:768px) {
     div {
-      max-width: 280px; //縮小左右按鈕間距
+      max-width: 240px; //縮小左右按鈕間距
     }
   }
 
-  @media(min-width:860px) {
+  @media(min-width:300px) {
     //PC版待調整
     flex-wrap: nowrap;
+    div{
+      max-width: 64px;  //三個按鈕的間距
+    }
 
   }
 
