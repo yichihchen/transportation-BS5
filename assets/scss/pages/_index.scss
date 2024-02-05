@@ -82,6 +82,21 @@ a.tab {
 
 //四個大按鈕
 
+
+/* 當選擇 tab(三個大按鈕) 時，按鈕 hover 背景顏色不消失 */
+.bus.selected {
+  background-color: #5dcff8;
+}
+
+.mrt.selected {
+  background-color: #5dcff8;
+}
+
+.youbike.selected {
+  background-color: #5dcff8;
+}
+
+
 .bus {
   width: 80px;
   height: 80px;
@@ -303,20 +318,27 @@ a.tab {
   display: block;
 }
 
+
+
+//sub-tab背景效果
+//新增
+// .sub-tab-green {
+//   background-color: green;
+// }
+
 // 公車內容
 
 .bus-time {
+
+  .selected {
+    background-color: green;
+  }
 
   .Wanhua-exercise2 {
     width: 100%;
 
     h6 {
       background-color: rgb(229, 229, 229);
-
-      &:hover {
-        background-color: #b4e4ff;
-      }
-
       border: 1px solid rgb(45, 45, 45);
       border-radius: 5rem 5rem 5rem 5rem;
       color: rgb(45, 45, 45);
@@ -324,6 +346,10 @@ a.tab {
       @media(min-width: 768px) {
         font-size: 20px;
       }
+    }
+
+    h6.selected {
+      background-color: #b4e4ff;
     }
   }
 
@@ -334,10 +360,6 @@ a.tab {
       color: black;
       background-color: rgb(229, 229, 229);
 
-      &:hover {
-        background-color: #b4e4ff;
-      }
-
       border-radius: 5rem 5rem 5rem 5rem;
       border: 1px solid rgb(45, 45, 45);
 
@@ -346,7 +368,10 @@ a.tab {
       @media(min-width: 768px) {
         font-size: 20px;
       }
+    }
 
+    h6.selected {
+      background-color: #b4e4ff;
     }
   }
 
@@ -357,11 +382,7 @@ a.tab {
       color: black;
       background-color: rgb(229, 229, 229);
 
-      &:hover {
-        background-color: #b4e4ff;
-      }
-
-      border-radius: 5rem 5rem 5rem 5rem;
+          border-radius: 5rem 5rem 5rem 5rem;
       border: 1px solid rgb(45, 45, 45);
 
       @media(min-width: 768px) {
@@ -369,6 +390,9 @@ a.tab {
       }
 
       font-size: 16px;
+    }
+    h6.selected {
+      background-color: #b4e4ff;
     }
   }
 }
@@ -627,7 +651,7 @@ a.tab {
     border-radius: 10px;
     padding: 16px; //電梯藍色空間
 
-    @media(min-width:400px){
+    @media(min-width:400px) {
       padding: 16px 36px; //電梯藍色空間
     }
   }
